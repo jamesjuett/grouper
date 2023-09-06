@@ -1,5 +1,14 @@
-Survey Column Headers
+## Create Groups
 
+```console
+npx ts-node grouper.ts
+```
+
+## Roster Columns
+- `uniqname` (string)
+- `section` (integer)
+
+## Survey Columns
 - `email` (string)
 - `preferred_name` (string)
 - `previous_experience` (1, 2, 3, 4, or 5)
