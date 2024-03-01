@@ -5,14 +5,14 @@ import { assert } from "../util";
 
 const SPECS = {
   survey: {
-    email: {kind: "id" },
-    preferred_name: {kind: "string" },
-    previous_experience: {kind: [1,2,3,4,5] },
-    confidence: {kind: [1,2,3,4,5] },
-    pref_less_comfortable: {kind: "boolean" },
-    pref_fast_pace: {kind: "boolean" },
-    pref_retake: {kind: "boolean" },
-    pref_plus_12: {kind: "boolean" },
+    email: { kind: "id" },
+    preferred_name: { kind: "string" },
+    previous_experience: { kind: [1,2,3,4,5] },
+    confidence: { kind: [1,2,3,4,5] },
+    pref_less_comfortable: { kind: "boolean" },
+    pref_fast_pace: { kind: "boolean" },
+    pref_retake: { kind: "boolean" },
+    pref_plus_12: { kind: "boolean" },
   },
   roster: {
     uniqname: { kind: "id", transform: (s: string) => s + "@umich.edu" },
