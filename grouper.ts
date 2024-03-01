@@ -1,9 +1,11 @@
 
-import csv from 'csv-parser';
-import { createReadStream, fstat, mkdirSync, writeFile, writeFileSync } from 'fs';
 import 'array-flat-polyfill';
-import { shuffle, groupBy, random } from 'underscore';
 import "colors";
+import csv from 'csv-parser';
+import { createReadStream, mkdirSync, writeFileSync } from 'fs';
+import { SeededRandomizer } from './SeededRandomizer';
+import { asMutable } from './util';
+
 
 function assert(condition: any, message: string = "") : asserts condition {
   if (!condition) {
@@ -67,6 +69,9 @@ interface Group {
   students: readonly Student[];
 }
 
+
+
+
 function describeStudent(s: Student) {
   if (!s.didSurvey) {
     return s.email;
@@ -85,43 +90,7 @@ function noneDidSurvey(students: readonly Student[]): students is readonly Surve
   return students.every(s => !s.didSurvey);
 }
 
-function createRandomGroups(students_orig: readonly Student[]) {
-
-  let students = shuffle(students_orig.slice()); // clones and shuffles array
   
-  // Let's say I have N students in a lab and I want to form groups of size X.
-  // But let's say there are 33 students and X = 4. Then I would want these groups:
-  // [4, 4, 4, 4, 4, 4, 3, 3, 3]
-  // How do I figure out how many groups of X-1 I should have in the general case?
-  // last group size = N % X ..... we want to get this to N - 1
-  // so we need to steal 1 student from (X - 1) - (N % X) other groups
-  // Then we will have (X - 1) - (N % X) + 1 = X - N % X groups of N-1
-  // Extra % GROUP_SIZE at the end handles case where there's 0
-  let gNm1 = (GROUP_SIZE - (students.length % GROUP_SIZE)) % GROUP_SIZE;
-
-  if (gNm1 === 0) {
-    // If there are e.g. no groups of N-1, allow a random chance that we
-    // instead form GROUP_SIZE of them. This helps allow different group
-    // sizes on each random restart.
-    if (Math.random() < 0.5) {
-      gNm1 = GROUP_SIZE;
-    }
-  }
-
-  let groups: Group[] = [];
-  let i = 0; 
-  while (i < students.length) {
-    let group: Student[] = [];
-    let size = gNm1-- > 0 ? GROUP_SIZE-1 : GROUP_SIZE;
-    for (let j = 0; j < size && i < students.length; ++j) {
-      group.push(students[i++]);
-    }
-    groups.push({students: group});
-  }
-
-  return groups;
-}
-
 function heuristic(g: Group) {
   let groupStudents = g.students;
 
@@ -217,74 +186,96 @@ function heuristic(g: Group) {
   return score;
 }
 
-function swap_random_students(g1: Group, g2: Group): [Group, Group] {
 
-  // copy student arrays
-  let s1 = g1.students.slice();
-  let s2 = g2.students.slice();
+const STUDENTS: Student[] = [];
+const STUDENTS_MAP: {[index:string]: Student | undefined} = {};
 
-  // swap random students
-  let i1 = random(0, s1.length - 1);
-  let i2 = random(0, s2.length - 1);
-  [s1[i1], s2[i2]] = [s2[i2], s1[i1]];
+const SECTIONS: number[] = []; 
 
-  // return new groups
-  return [{ students: s1 }, { students: s2 }];
-}
+type GrouperOptions = {
+  seed?: string;
+};
+export class Grouper {
 
-function optimize(groups: Group[]) {
-  for (let i = 0; i < N_OPT_1; ++i) {
+  public readonly sections: Group[][] = [];
+  private readonly RAND: SeededRandomizer;
 
-    // pick two random groups
-    let i1 = random(0, groups.length - 1);
-    let i2 = random(0, groups.length - 1);
-
-    if (i1 === i2) {
-      // cannot allow a group to swap students with itself
-      // for example:
-      //   [x, y, z] swaps index 0 with [x, y, z] index 3
-      //   then you get
-      //   [z, y, z]  and [x, y, x] which is very bad
-      continue;
-    }
-
-    let g1 = groups[i1];
-    let g2 = groups[i2];
-
-    let h_before = heuristic(g1) + heuristic(g2);
-
-    let g1_new: Group;
-    let g2_new: Group;
-
-    // swap one student between them
-    [g1_new, g2_new] = swap_random_students(g1, g2);
-
-    let h_after = heuristic(g1_new) + heuristic(g2_new);
-
-    if (h_after <= h_before) {
-      groups[i1] = g1_new;
-      groups[i2] = g2_new;
-    }
+  public constructor(options: GrouperOptions = {}) {
+    this.RAND = new SeededRandomizer(options.seed ?? ""+Date.now());
   }
-}
-
-function optimize2(groups: Group[]) {
   
-  // sort in descending order
-  groups.sort((a, b) => heuristic(b) - heuristic(a));
-
-  for (let i = 0; i < groups.length; ++i) {
-
-    let g1 = groups[i];
-
-    if (heuristic(g1) === 0) {
-      continue;
+  private createRandomGroups(students_orig: readonly Student[]) {
+  
+    let students = this.RAND.shuffle(students_orig.slice()); // clones and shuffles array
+    
+    // Let's say I have N students in a lab and I want to form groups of size X.
+    // But let's say there are 33 students and X = 4. Then I would want these groups:
+    // [4, 4, 4, 4, 4, 4, 3, 3, 3]
+    // How do I figure out how many groups of X-1 I should have in the general case?
+    // last group size = N % X ..... we want to get this to N - 1
+    // so we need to steal 1 student from (X - 1) - (N % X) other groups
+    // Then we will have (X - 1) - (N % X) + 1 = X - N % X groups of N-1
+    // Extra % GROUP_SIZE at the end handles case where there's 0
+    let gNm1 = (GROUP_SIZE - (students.length % GROUP_SIZE)) % GROUP_SIZE;
+  
+    if (gNm1 === 0) {
+      // If there are e.g. no groups of N-1, allow a random chance that we
+      // instead form GROUP_SIZE of them. This helps allow different group
+      // sizes on each random restart.
+      if (this.RAND.float() < 0.5) {
+        gNm1 = GROUP_SIZE;
+      }
     }
-
-    for (let k = 0; k < groups.length; ++k) {
-      if (k == i) { continue; }
-
-      let g2 = groups[k];
+  
+    let groups: Group[] = [];
+    let i = 0; 
+    while (i < students.length) {
+      let group: Student[] = [];
+      let size = gNm1-- > 0 ? GROUP_SIZE-1 : GROUP_SIZE;
+      for (let j = 0; j < size && i < students.length; ++j) {
+        group.push(students[i++]);
+      }
+      groups.push({students: group});
+    }
+  
+    return groups;
+  }
+  
+  /**
+   * 
+   * @requires g1 and g2 are not aliases for the same group
+   * @returns 
+   */
+  private swap_random_students(g1: Group, g2: Group): [Group, Group] {
+  
+    // copy student arrays
+    let s1 = g1.students.slice();
+    let s2 = g2.students.slice();
+  
+    // swap random students
+    let i1 = this.RAND.range(s1.length); // 0
+    let i2 = this.RAND.range(s2.length); // 3
+    [s1[i1], s2[i2]] = [s2[i2], s1[i1]];
+  
+    // return new groups
+    return [{ students: s1 }, { students: s2 }];
+  }
+  
+  private optimize(groups: Group[]) {
+    for (let i = 0; i < N_OPT_1; ++i) {
+  
+      // pick two random groups
+      let i1 = this.RAND.range(groups.length);
+      let i2 = this.RAND.range(groups.length);
+  
+      if (i1 === i2) {
+        // Don't allow a group to swap students with itself.
+        // This means we don't have to worry about clobbering data.
+        continue;
+      }
+  
+      let g1 = groups[i1];
+      let g2 = groups[i2];
   
       let h_before = heuristic(g1) + heuristic(g2);
   
@@ -292,159 +283,197 @@ function optimize2(groups: Group[]) {
       let g2_new: Group;
   
       // swap one student between them
-      [g1_new, g2_new] = swap_random_students(g1, g2);
+      [g1_new, g2_new] = this.swap_random_students(g1, g2);
   
       let h_after = heuristic(g1_new) + heuristic(g2_new);
   
       if (h_after <= h_before) {
-        groups[i] = g1_new;
-        groups[k] = g2_new;
-        break;
+        groups[i1] = g1_new;
+        groups[i2] = g2_new;
       }
-
     }
-
   }
-}
-
-
-const STUDENTS: Student[] = [];
-const STUDENTS_MAP: {[index:string]: Student | undefined} = {};
-
-const SECTIONS: number[] = []; 
-
-createReadStream('data/roster.csv')
-  .pipe(csv())
-  .on('data', (row: {[index: string]: any}) => {
-
-    let uniqname: string = row["uniqname"].toLowerCase();
-    let fullName: string = row["Name"];
-    let section: number = parseInt(row["section"]);
-
-    // track all sections that we see
-    if (SECTIONS.indexOf(section) === -1) {
-      SECTIONS.push(section);
-    }
-
-    // Skip duplicates
-    if (STUDENTS_MAP[uniqname + "@umich.edu"]) {
-      return;
-    }
-
-    let student: Student = {
-      uniqname: uniqname,
-      email: uniqname + "@umich.edu",
-      fullName: fullName,
-      section: section,
-      didSurvey: false
-    };
-    STUDENTS.push(student);
-    STUDENTS_MAP[student.email!] = student;
-
-  }).on('end', () => {
-    createReadStream('data/survey.csv')
-      .pipe(csv())
-      .on('data', (row: SurveyRowData) => {
-        // Called for each row in data with a map of column headings to data for that row
-
-        // match by email against survey results
-        let student = STUDENTS_MAP[row.email];
-
-        if (!student) {
-          console.log(`Student not in roster: ${row.email}`.bgRed);
-          return;
+  
+  private optimize2(groups: Group[]) {
+    
+    // sort in descending order
+    groups.sort((a, b) => heuristic(b) - heuristic(a));
+  
+    for (let i = 0; i < groups.length; ++i) {
+  
+      let g1 = groups[i];
+  
+      if (heuristic(g1) === 0) {
+        continue;
+      }
+  
+      for (let k = 0; k < groups.length; ++k) {
+        if (k == i) { continue; }
+  
+        let g2 = groups[k];
+    
+        let h_before = heuristic(g1) + heuristic(g2);
+    
+        let g1_new: Group;
+        let g2_new: Group;
+    
+        // swap one student between them
+        [g1_new, g2_new] = this.swap_random_students(g1, g2);
+    
+        let h_after = heuristic(g1_new) + heuristic(g2_new);
+    
+        if (h_after <= h_before) {
+          groups[i] = g1_new;
+          groups[k] = g2_new;
+          break;
         }
-
-        let qualities: { [k in Qualities]?: boolean; } = {};
-        Object.values(Qualities).forEach(q => qualities[q] = row[q] === "TRUE");
-
-        Object.assign(student, <Partial<SurveyStudent>>{
-          email: row.email.trim(),
-          preferredName: row.preferred_name,
-          background: <1 | 2 | 3 | 4 | 5>parseInt(row.previous_experience),
-          confidence: <1 | 2 | 3 | 4 | 5>parseInt(row.confidence),
-          qualities: qualities,
-          didSurvey: true
-        });
-      })
-      .on('end', () => {
-        
-        mkdirSync("out", { recursive: true });
-
-        SECTIONS.sort((a,b) => a - b);
-        let sections = SECTIONS.map((sectionNum) => {
-          console.log(`Forming groups for section ${sectionNum}...`)
-          let students = STUDENTS.filter(s => s.section === sectionNum);
-
-          let bestH = 10000000000;
-          let bestGroups: Group[] = [];
-          for(let i = 0; i < N_RESTARTS; ++i) { // 100 random restarts
-            let groups = createOptimalGroups(students);
-            let h = groups.reduce((prev, g) => prev + heuristic(g), 0);
-            if (h < bestH) {
-              bestH = h;
-              bestGroups = groups;
-            }
-          }
-          return bestGroups
-        });
-
-        let groups = sections.flat();
-        
-        // sort in ascending order (remember lower heuristic is better)
-        // groups.sort((a, b) => heuristic(a) - heuristic(b));
-
-        let output = "";
-        groups.forEach((g: Group, i: number) => {
-          output += `Group ${i}: s=${g.students[0].section} h=${heuristic(g)}\n`;
-          output += g.students.map(s => describeStudent(s)).join("\n") + "\n";
-          output += "\n";
-        });
-
-        writeFileSync("out/group_info.txt", output);
-
-        output = "";
-        output += "group,section,score,emails,name1,name2,name3,name4,timeslot\n"
-        groups.forEach((g: Group, i: number) => {
-          output += "Group" + i + "," + g.students[0].section + "," + heuristic(g) + ",";
-          output += '"' + g.students.map(s => s.email).join(",") + '",';
-          output += (g.students[0]?.preferredName ?? "") + ","
-          output += (g.students[1]?.preferredName ?? "") + ","
-          output += (g.students[2]?.preferredName ?? "") + ","
-          output += (g.students[3]?.preferredName ?? "") + ","
-          output += g.students[0].section;
-          output += "\n";
-        });
-
-        writeFileSync("out/groups.txt", output);
-
-        output = "";
-        output += "section,group,uniqname,name\n"
-        sections.forEach(groups => {
-          groups.forEach((g: Group, i: number) => {
-            g.students.forEach(s => {
-              output += `${s.section},${i+1},${s.uniqname},${s.preferredName || s.fullName || s.uniqname}\n`; 
-            });
-            for(let j = 0; j < GROUP_SIZE - g.students.length; ++j) {
-              output += "\n";
-            }
-          });
-        });
-
-        writeFileSync("out/sections.csv", output);
-        writeFileSync("out/assignments.json", JSON.stringify(sections));
-      });
-  });
-
-
-
-
-function createOptimalGroups(students: Student[]) {
-  let groups = createRandomGroups(students);
-  optimize(groups);
-  for (let i = 0; i < N_OPT_2; ++i) {
-    optimize2(groups);
+  
+      }
+  
+    }
   }
-  return groups;
-}
+
+  
+
+  private createOptimalGroups(students: Student[]) {
+    let groups = this.createRandomGroups(students);
+    this.optimize(groups);
+    for (let i = 0; i < N_OPT_2; ++i) {
+      this.optimize2(groups);
+    }
+    return groups;
+  }
+
+  public createGroups() {
+    return new Promise<void>((resolve, reject) => {
+      createReadStream('data/roster.csv')
+        .pipe(csv())
+        .on('data', (row: {[index: string]: any}) => {
+
+          let uniqname: string = row["uniqname"].toLowerCase();
+          let fullName: string = row["Name"];
+          let section: number = parseInt(row["section"]);
+
+          // track all sections that we see
+          if (SECTIONS.indexOf(section) === -1) {
+            SECTIONS.push(section);
+          }
+
+          // Skip duplicates
+          if (STUDENTS_MAP[uniqname + "@umich.edu"]) {
+            return;
+          }
+
+          let student: Student = {
+            uniqname: uniqname,
+            email: uniqname + "@umich.edu",
+            fullName: fullName,
+            section: section,
+            didSurvey: false
+          };
+          STUDENTS.push(student);
+          STUDENTS_MAP[student.email!] = student;
+
+        }).on('end', () => {
+          createReadStream('data/survey.csv')
+            .pipe(csv())
+            .on('data', (row: SurveyRowData) => {
+              // Called for each row in data with a map of column headings to data for that row
+
+              // match by email against survey results
+              let student = STUDENTS_MAP[row.email];
+
+              if (!student) {
+                console.log(`Student not in roster: ${row.email}`.bgRed);
+                return;
+              }
+
+              let qualities: { [k in Qualities]?: boolean; } = {};
+              Object.values(Qualities).forEach(q => qualities[q] = row[q] === "TRUE");
+
+              Object.assign(student, <Partial<SurveyStudent>>{
+                email: row.email.trim(),
+                preferredName: row.preferred_name,
+                background: <1 | 2 | 3 | 4 | 5>parseInt(row.previous_experience),
+                confidence: <1 | 2 | 3 | 4 | 5>parseInt(row.confidence),
+                qualities: qualities,
+                didSurvey: true
+              });
+            })
+            .on('end', () => {
+              
+              mkdirSync("out", { recursive: true });
+
+              SECTIONS.sort((a,b) => a - b);
+              let sections = SECTIONS.map((sectionNum) => {
+                console.log(`Forming groups for section ${sectionNum}...`)
+                let students = STUDENTS.filter(s => s.section === sectionNum);
+
+                let bestH = 10000000000;
+                let bestGroups: Group[] = [];
+                for(let i = 0; i < N_RESTARTS; ++i) { // 100 random restarts
+                  let groups = this.createOptimalGroups(students);
+                  let h = groups.reduce((prev, g) => prev + heuristic(g), 0);
+                  if (h < bestH) {
+                    bestH = h;
+                    bestGroups = groups;
+                  }
+                }
+                return bestGroups
+              });
+
+              let groups = sections.flat();
+              
+              // sort in ascending order (remember lower heuristic is better)
+              // groups.sort((a, b) => heuristic(a) - heuristic(b));
+
+              let output = "";
+              groups.forEach((g: Group, i: number) => {
+                output += `Group ${i}: s=${g.students[0].section} h=${heuristic(g)}\n`;
+                output += g.students.map(s => describeStudent(s)).join("\n") + "\n";
+                output += "\n";
+              });
+
+              writeFileSync("out/group_info.txt", output);
+
+              output = "";
+              output += "group,section,score,emails,name1,name2,name3,name4,timeslot\n"
+              groups.forEach((g: Group, i: number) => {
+                output += "Group" + i + "," + g.students[0].section + "," + heuristic(g) + ",";
+                output += '"' + g.students.map(s => s.email).join(",") + '",';
+                output += (g.students[0]?.preferredName ?? "") + ","
+                output += (g.students[1]?.preferredName ?? "") + ","
+                output += (g.students[2]?.preferredName ?? "") + ","
+                output += (g.students[3]?.preferredName ?? "") + ","
+                output += g.students[0].section;
+                output += "\n";
+              });
+
+              writeFileSync("out/groups.txt", output);
+
+              output = "";
+              output += "section,group,uniqname,name\n"
+              sections.forEach(groups => {
+                groups.forEach((g: Group, i: number) => {
+                  g.students.forEach(s => {
+                    output += `${s.section},${i+1},${s.uniqname},${s.preferredName || s.fullName || s.uniqname}\n`; 
+                  });
+                  for(let j = 0; j < GROUP_SIZE - g.students.length; ++j) {
+                    output += "\n";
+                  }
+                });
+              });
+
+              writeFileSync("out/sections.csv", output);
+              writeFileSync("out/assignments.json", JSON.stringify(sections, null, 2));
+              asMutable(this).sections = sections;
+              resolve();
+            });
+        });
+      });
+  }
+};
+
+
+
 
