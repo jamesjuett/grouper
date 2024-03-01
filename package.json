@@ -5,11 +5,13 @@
   "description": "Group formation using hill-climbing with random restarts",
   "dependencies": {
     "@types/minimist": "^1.2.0",
+    "@types/papaparse": "^5.3.14",
     "array-flat-polyfill": "^1.0.1",
     "colors": "^1.4.0",
     "csv-parser": "^2.3.3",
     "fs": "^0.0.1-security",
     "minimist": "^1.2.5",
+    "papaparse": "^5.4.1",
     "random-seed": "^0.3.0",
     "shuffle-seed": "^1.1.6",
     "ts-node": "^9.1.1",
