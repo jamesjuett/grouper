@@ -1,0 +1,1913 @@
+Group 0: s=11 h=1000000
+student642@umich.edu Name642: bg(2) conf(3)(fast pace)(less comfortable)
+student297@umich.edu Name297: bg(3) conf(3)
+student226@umich.edu Name226: bg(1) conf(1)(retake)(fast pace)(less comfortable)
+student740@umich.edu Name740: bg(1) conf(1)(retake)
+
+Group 1: s=11 h=11000
+student273@umich.edu Name273: bg(2) conf(2)(retake)
+student467@umich.edu Name467: bg(2) conf(1)(retake)
+student832@umich.edu Name832: bg(5) conf(3)(retake)(less comfortable)
+student111@umich.edu Name111: bg(4) conf(4)(retake)(fast pace)(less comfortable)
+
+Group 2: s=11 h=10000
+student953@umich.edu Name953: bg(1) conf(5)
+student384@umich.edu Name384: bg(2) conf(3)(fast pace)
+student137@umich.edu Name137: bg(3) conf(4)(fast pace)
+
+Group 3: s=11 h=0
+student749@umich.edu Name749: bg(3) conf(3)(fast pace)
+student588@umich.edu Name588: bg(2) conf(3)(less comfortable)
+student764@umich.edu Name764: bg(3) conf(4)(fast pace)(less comfortable)
+student818@umich.edu Name818: bg(4) conf(3)
+
+Group 4: s=11 h=0
+student349@umich.edu Name349: bg(3) conf(3)(fast pace)(less comfortable)
+student538@umich.edu Name538: bg(2) conf(2)(fast pace)(less comfortable)
+student369@umich.edu Name369: bg(1) conf(3)
+student462@umich.edu Name462: bg(2) conf(1)(fast pace)
+
+Group 5: s=11 h=0
+student562@umich.edu Name562: bg(3) conf(4)(fast pace)
+student208@umich.edu Name208: bg(4) conf(3)(fast pace)
+student684@umich.edu Name684: bg(4) conf(4)(fast pace)
+student676@umich.edu Name676: bg(4) conf(3)
+
+Group 6: s=11 h=1000
+student294@umich.edu Name294: bg(2) conf(3)(less comfortable)
+student648@umich.edu Name648: bg(1) conf(2)(fast pace)
+student516@umich.edu Name516: bg(3) conf(3)(fast pace)(less comfortable)
+student555@umich.edu Name555: bg(1) conf(2)(fast pace)
+
+Group 7: s=11 h=0
+student459@umich.edu Name459: bg(3) conf(3)(fast pace)
+student9@umich.edu Name9: bg(3) conf(4)(fast pace)
+student146@umich.edu Name146: bg(4) conf(4)
+student972@umich.edu Name972: bg(2) conf(3)
+
+Group 8: s=11 h=0
+student1245@umich.edu
+student1248@umich.edu
+student1184@umich.edu
+student1194@umich.edu
+
+Group 9: s=11 h=0
+student1246@umich.edu
+student1247@umich.edu
+student1173@umich.edu
+student1185@umich.edu
+
+Group 10: s=12 h=1001000
+student40@umich.edu Name40: bg(2) conf(2)(less comfortable)
+student551@umich.edu Name551: bg(2) conf(5)
+student493@umich.edu Name493: bg(3) conf(2)(less comfortable)
+student612@umich.edu Name612: bg(2) conf(3)(retake)(less comfortable)
+
+Group 11: s=12 h=10000
+student799@umich.edu Name799: bg(4) conf(4)(fast pace)
+student500@umich.edu Name500: bg(4) conf(3)(fast pace)
+student650@umich.edu Name650: bg(3) conf(4)(fast pace)
+
+Group 12: s=12 h=10000
+student138@umich.edu Name138: bg(3) conf(4)(fast pace)
+student846@umich.edu Name846: bg(4) conf(4)(fast pace)
+student1013@umich.edu Name1013: bg(4) conf(3)(fast pace)
+
+Group 13: s=12 h=1000
+student636@umich.edu Name636: bg(3) conf(4)
+student615@umich.edu Name615: bg(1) conf(3)
+student580@umich.edu Name580: bg(1) conf(2)(less comfortable)
+student964@umich.edu Name964: bg(1) conf(1)
+
+Group 14: s=12 h=1000
+student613@umich.edu Name613: bg(2) conf(5)(retake)(fast pace)(less comfortable)
+student593@umich.edu Name593: bg(2) conf(4)(retake)(fast pace)(less comfortable)
+student681@umich.edu Name681: bg(4) conf(5)(retake)(fast pace)
+student965@umich.edu Name965: bg(4) conf(3)(retake)(fast pace)
+
+Group 15: s=12 h=0
+student1209@umich.edu
+student1237@umich.edu
+student1075@umich.edu
+
+Group 16: s=12 h=0
+student58@umich.edu Name58: bg(2) conf(3)(fast pace)
+student506@umich.edu Name506: bg(4) conf(4)(fast pace)
+student472@umich.edu Name472: bg(2) conf(3)(fast pace)
+student159@umich.edu Name159: bg(4) conf(4)(fast pace)
+
+Group 17: s=12 h=0
+student265@umich.edu Name265: bg(4) conf(5)(fast pace)
+student658@umich.edu Name658: bg(4) conf(3)(fast pace)
+student64@umich.edu Name64: bg(4) conf(4)(fast pace)
+student46@umich.edu Name46: bg(3) conf(4)(fast pace)
+
+Group 18: s=12 h=0
+student1241@umich.edu
+student1156@umich.edu
+student1181@umich.edu
+student1243@umich.edu
+
+Group 19: s=12 h=0
+student525@umich.edu Name525: bg(3) conf(3)(fast pace)
+student986@umich.edu Name986: bg(1) conf(4)
+student925@umich.edu Name925: bg(1) conf(3)
+student262@umich.edu Name262: bg(2) conf(3)(fast pace)
+
+Group 20: s=13 h=0
+student499@umich.edu Name499: bg(3) conf(4)(less comfortable)
+student583@umich.edu Name583: bg(4) conf(4)
+student825@umich.edu Name825: bg(2) conf(4)(fast pace)
+student963@umich.edu Name963: bg(4) conf(4)(fast pace)(less comfortable)
+
+Group 21: s=13 h=11000
+student517@umich.edu Name517: bg(1) conf(3)(fast pace)
+student83@umich.edu Name83: bg(4) conf(2)(fast pace)
+student905@umich.edu Name905: bg(1) conf(3)
+student839@umich.edu Name839: bg(2) conf(1)(less comfortable)
+
+Group 22: s=13 h=10000
+student207@umich.edu Name207: bg(1) conf(3)(less comfortable)
+student247@umich.edu Name247: bg(1) conf(2)
+student957@umich.edu Name957: bg(1) conf(2)(less comfortable)
+student228@umich.edu Name228: bg(4) conf(2)
+
+Group 23: s=13 h=10000
+student868@umich.edu Name868: bg(2) conf(2)(retake)(less comfortable)
+student804@umich.edu Name804: bg(1) conf(4)(retake)(fast pace)(less comfortable)
+student161@umich.edu Name161: bg(1) conf(2)(retake)
+student239@umich.edu Name239: bg(3) conf(3)(retake)(fast pace)
+
+Group 24: s=13 h=0
+student286@umich.edu Name286: bg(5) conf(5)(fast pace)
+student857@umich.edu Name857: bg(3) conf(4)(fast pace)
+student767@umich.edu Name767: bg(4) conf(4)(fast pace)
+student829@umich.edu Name829: bg(3) conf(4)(fast pace)
+
+Group 25: s=13 h=0
+student1094@umich.edu
+student1239@umich.edu
+student1118@umich.edu
+student1220@umich.edu
+
+Group 26: s=13 h=0
+student629@umich.edu Name629: bg(2) conf(3)(less comfortable)
+student242@umich.edu Name242: bg(1) conf(1)(less comfortable)
+student300@umich.edu Name300: bg(1) conf(2)
+student546@umich.edu Name546: bg(3) conf(3)
+
+Group 27: s=13 h=0
+student1189@umich.edu
+student1133@umich.edu
+student1230@umich.edu
+
+Group 28: s=13 h=0
+student622@umich.edu Name622: bg(1) conf(3)(less comfortable)
+student344@umich.edu Name344: bg(1) conf(3)(less comfortable)
+student31@umich.edu Name31: bg(1) conf(3)(fast pace)
+student941@umich.edu Name941: bg(3) conf(4)(fast pace)
+
+Group 29: s=14 h=100000
+student1146@umich.edu
+student1167@umich.edu
+student254@umich.edu Name254: bg(3) conf(4)(fast pace)
+student35@umich.edu Name35: bg(4) conf(3)(fast pace)
+
+Group 30: s=14 h=11000
+student1002@umich.edu Name1002: bg(3) conf(3)(retake)
+student863@umich.edu Name863: bg(2) conf(1)(retake)(fast pace)(less comfortable)
+student181@umich.edu Name181: bg(4) conf(3)(retake)(less comfortable)
+student82@umich.edu Name82: bg(3) conf(3)(retake)(less comfortable)
+
+Group 31: s=14 h=10000
+student784@umich.edu Name784: bg(4) conf(3)(fast pace)
+student842@umich.edu Name842: bg(4) conf(3)
+student761@umich.edu Name761: bg(4) conf(4)(fast pace)
+
+Group 32: s=14 h=1000
+student450@umich.edu Name450: bg(1) conf(3)
+student202@umich.edu Name202: bg(1) conf(3)(fast pace)(less comfortable)
+student649@umich.edu Name649: bg(1) conf(3)
+student147@umich.edu Name147: bg(3) conf(3)(fast pace)
+
+Group 33: s=14 h=0
+student1140@umich.edu
+student1105@umich.edu
+student1191@umich.edu
+
+Group 34: s=14 h=0
+student325@umich.edu Name325: bg(1) conf(2)(less comfortable)
+student402@umich.edu Name402: bg(3) conf(2)(fast pace)(less comfortable)
+student824@umich.edu Name824: bg(1) conf(3)(fast pace)
+student601@umich.edu Name601: bg(2) conf(3)
+
+Group 35: s=14 h=0
+student94@umich.edu Name94: bg(2) conf(2)(fast pace)
+student115@umich.edu Name115: bg(3) conf(3)(fast pace)
+student900@umich.edu Name900: bg(1) conf(3)
+student327@umich.edu Name327: bg(2) conf(2)(fast pace)
+
+Group 36: s=14 h=0
+student840@umich.edu Name840: bg(4) conf(4)(fast pace)
+student545@umich.edu Name545: bg(3) conf(3)
+student632@umich.edu Name632: bg(5) conf(5)(fast pace)
+student338@umich.edu Name338: bg(5) conf(4)(fast pace)
+
+Group 37: s=14 h=0
+student617@umich.edu Name617: bg(3) conf(3)(fast pace)
+student570@umich.edu Name570: bg(2) conf(3)
+student243@umich.edu Name243: bg(2) conf(4)
+student950@umich.edu Name950: bg(5) conf(5)(fast pace)
+
+Group 38: s=15 h=21000
+student714@umich.edu Name714: bg(3) conf(5)(retake)(less comfortable)
+student550@umich.edu Name550: bg(2) conf(1)(retake)(less comfortable)
+student396@umich.edu Name396: bg(3) conf(5)(retake)
+student779@umich.edu Name779: bg(3) conf(3)(retake)
+
+Group 39: s=15 h=10000
+student442@umich.edu Name442: bg(4) conf(2)(fast pace)(less comfortable)
+student481@umich.edu Name481: bg(1) conf(2)(less comfortable)
+student486@umich.edu Name486: bg(1) conf(3)(fast pace)(less comfortable)
+student142@umich.edu Name142: bg(2) conf(1)
+
+Group 40: s=15 h=1000
+student337@umich.edu Name337: bg(1) conf(3)(fast pace)(less comfortable)
+student77@umich.edu Name77: bg(1) conf(2)
+student661@umich.edu Name661: bg(3) conf(2)
+student647@umich.edu Name647: bg(1) conf(1)(fast pace)
+
+Group 41: s=15 h=0
+student831@umich.edu Name831: bg(3) conf(3)
+student913@umich.edu Name913: bg(4) conf(4)(fast pace)
+student515@umich.edu Name515: bg(3) conf(3)(fast pace)
+student199@umich.edu Name199: bg(4) conf(3)(fast pace)
+
+Group 42: s=15 h=0
+student100@umich.edu Name100: bg(3) conf(4)(fast pace)
+student175@umich.edu Name175: bg(3) conf(3)(less comfortable)
+student341@umich.edu Name341: bg(2) conf(3)(fast pace)(less comfortable)
+student1014@umich.edu Name1014: bg(3) conf(3)
+
+Group 43: s=15 h=0
+student848@umich.edu Name848: bg(3) conf(3)(fast pace)
+student219@umich.edu Name219: bg(3) conf(4)
+student416@umich.edu Name416: bg(4) conf(4)(fast pace)
+student54@umich.edu Name54: bg(2) conf(3)(fast pace)
+
+Group 44: s=15 h=0
+student1188@umich.edu
+student1242@umich.edu
+student1129@umich.edu
+
+Group 45: s=15 h=0
+student1199@umich.edu
+student1240@umich.edu
+student1212@umich.edu
+
+Group 46: s=15 h=0
+student879@umich.edu Name879: bg(3) conf(4)(fast pace)
+student924@umich.edu Name924: bg(3) conf(3)
+student910@umich.edu Name910: bg(3) conf(3)
+student512@umich.edu Name512: bg(3) conf(5)(fast pace)
+
+Group 47: s=16 h=100000
+student752@umich.edu Name752: bg(4) conf(3)(fast pace)
+student969@umich.edu Name969: bg(5) conf(4)(fast pace)
+student1066@umich.edu
+student1198@umich.edu
+
+Group 48: s=16 h=11000
+student420@umich.edu Name420: bg(4) conf(4)(retake)(fast pace)
+student566@umich.edu Name566: bg(2) conf(3)(retake)(fast pace)(less comfortable)
+student307@umich.edu Name307: bg(2) conf(3)(retake)(fast pace)
+
+Group 49: s=16 h=11000
+student679@umich.edu Name679: bg(3) conf(2)
+student729@umich.edu Name729: bg(3) conf(2)(fast pace)(less comfortable)
+student168@umich.edu Name168: bg(2) conf(3)(less comfortable)
+
+Group 50: s=16 h=0
+student731@umich.edu Name731: bg(4) conf(4)(fast pace)
+student193@umich.edu Name193: bg(4) conf(4)(fast pace)
+student336@umich.edu Name336: bg(4) conf(4)(fast pace)(less comfortable)
+student672@umich.edu Name672: bg(4) conf(3)(fast pace)(less comfortable)
+
+Group 51: s=16 h=0
+student47@umich.edu Name47: bg(1) conf(2)(less comfortable)
+student1020@umich.edu Name1020: bg(2) conf(2)
+student279@umich.edu Name279: bg(3) conf(3)
+student454@umich.edu Name454: bg(1) conf(3)(less comfortable)
+
+Group 52: s=16 h=0
+student747@umich.edu Name747: bg(2) conf(2)
+student728@umich.edu Name728: bg(1) conf(3)(fast pace)
+student318@umich.edu Name318: bg(1) conf(2)
+student378@umich.edu Name378: bg(3) conf(3)(fast pace)
+
+Group 53: s=16 h=0
+student314@umich.edu Name314: bg(1) conf(3)
+student313@umich.edu Name313: bg(3) conf(3)
+student204@umich.edu Name204: bg(2) conf(3)
+student691@umich.edu Name691: bg(1) conf(5)
+
+Group 54: s=16 h=0
+student428@umich.edu Name428: bg(3) conf(4)(fast pace)
+student791@umich.edu Name791: bg(4) conf(4)(fast pace)
+student696@umich.edu Name696: bg(5) conf(5)
+student979@umich.edu Name979: bg(4) conf(4)
+
+Group 55: s=16 h=0
+student967@umich.edu Name967: bg(2) conf(4)(fast pace)
+student381@umich.edu Name381: bg(2) conf(3)
+student301@umich.edu Name301: bg(5) conf(4)(fast pace)
+student394@umich.edu Name394: bg(4) conf(3)
+
+Group 56: s=17 h=0
+student677@umich.edu Name677: bg(1) conf(3)
+student482@umich.edu Name482: bg(1) conf(4)(fast pace)
+student398@umich.edu Name398: bg(1) conf(4)
+student798@umich.edu Name798: bg(3) conf(4)(fast pace)
+
+Group 57: s=17 h=10000
+student375@umich.edu Name375: bg(4) conf(4)
+student561@umich.edu Name561: bg(4) conf(4)(fast pace)
+student55@umich.edu Name55: bg(4) conf(5)(fast pace)
+
+Group 58: s=17 h=1010000
+student303@umich.edu Name303: bg(3) conf(4)(fast pace)
+student430@umich.edu Name430: bg(1) conf(3)(fast pace)
+student514@umich.edu Name514: bg(1) conf(5)(retake)(fast pace)
+
+Group 59: s=17 h=1000
+student319@umich.edu Name319: bg(5) conf(4)(retake)(fast pace)
+student928@umich.edu Name928: bg(3) conf(3)(retake)(fast pace)(less comfortable)
+student33@umich.edu Name33: bg(2) conf(3)(retake)(fast pace)
+student720@umich.edu Name720: bg(3) conf(3)(retake)(fast pace)
+
+Group 60: s=17 h=0
+student154@umich.edu Name154: bg(4) conf(4)(fast pace)
+student542@umich.edu Name542: bg(4) conf(3)(fast pace)
+student644@umich.edu Name644: bg(4) conf(4)(fast pace)
+student342@umich.edu Name342: bg(5) conf(4)
+
+Group 61: s=17 h=0
+student875@umich.edu Name875: bg(1) conf(3)(fast pace)(less comfortable)
+student434@umich.edu Name434: bg(2) conf(2)(fast pace)
+student1001@umich.edu Name1001: bg(2) conf(2)
+student742@umich.edu Name742: bg(3) conf(2)(fast pace)(less comfortable)
+
+Group 62: s=17 h=0
+student891@umich.edu Name891: bg(3) conf(2)(fast pace)
+student42@umich.edu Name42: bg(1) conf(1)(fast pace)(less comfortable)
+student660@umich.edu Name660: bg(2) conf(2)(fast pace)(less comfortable)
+student830@umich.edu Name830: bg(3) conf(3)(fast pace)
+
+Group 63: s=17 h=0
+student1177@umich.edu
+student1159@umich.edu
+student1205@umich.edu
+student1044@umich.edu
+
+Group 64: s=17 h=0
+student289@umich.edu Name289: bg(3) conf(3)(fast pace)(less comfortable)
+student331@umich.edu Name331: bg(1) conf(1)(less comfortable)
+student97@umich.edu Name97: bg(2) conf(3)(fast pace)
+student373@umich.edu Name373: bg(3) conf(2)
+
+Group 65: s=18 h=100000
+student1125@umich.edu
+student1004@umich.edu Name1004: bg(4) conf(3)(less comfortable)
+student883@umich.edu Name883: bg(4) conf(4)(less comfortable)
+student1186@umich.edu
+
+Group 66: s=18 h=21000
+student123@umich.edu Name123: bg(1) conf(2)(retake)
+student1010@umich.edu Name1010: bg(4) conf(2)(retake)
+student996@umich.edu Name996: bg(3) conf(3)(retake)(fast pace)
+
+Group 67: s=18 h=10000
+student437@umich.edu Name437: bg(1) conf(4)
+student932@umich.edu Name932: bg(5) conf(5)(fast pace)
+student616@umich.edu Name616: bg(1) conf(3)(fast pace)
+student785@umich.edu Name785: bg(4) conf(3)(fast pace)
+
+Group 68: s=18 h=10000
+student762@umich.edu Name762: bg(1) conf(4)(fast pace)
+student386@umich.edu Name386: bg(2) conf(4)
+student53@umich.edu Name53: bg(3) conf(4)(fast pace)
+
+Group 69: s=18 h=1000
+student480@umich.edu Name480: bg(1) conf(2)(less comfortable)
+student217@umich.edu Name217: bg(3) conf(3)(fast pace)
+student776@umich.edu Name776: bg(1) conf(2)
+student800@umich.edu Name800: bg(2) conf(2)(fast pace)
+
+Group 70: s=18 h=0
+student954@umich.edu Name954: bg(4) conf(4)(less comfortable)
+student687@umich.edu Name687: bg(4) conf(4)
+student496@umich.edu Name496: bg(3) conf(3)
+student1026@umich.edu Name1026: bg(2) conf(3)(less comfortable)
+
+Group 71: s=18 h=0
+student1200@umich.edu
+student1233@umich.edu
+student1120@umich.edu
+student1171@umich.edu
+
+Group 72: s=18 h=0
+student483@umich.edu Name483: bg(4) conf(3)(fast pace)
+student311@umich.edu Name311: bg(4) conf(4)
+student788@umich.edu Name788: bg(3) conf(3)(fast pace)
+student78@umich.edu Name78: bg(2) conf(3)
+
+Group 73: s=18 h=0
+student772@umich.edu Name772: bg(5) conf(4)(fast pace)
+student864@umich.edu Name864: bg(5) conf(5)(fast pace)
+student896@umich.edu Name896: bg(4) conf(4)(fast pace)
+student145@umich.edu Name145: bg(4) conf(4)
+
+Group 74: s=19 h=100000
+student1231@umich.edu
+student549@umich.edu Name549: bg(4) conf(4)(fast pace)
+student328@umich.edu Name328: bg(5) conf(5)(fast pace)
+student1158@umich.edu
+
+Group 75: s=19 h=22000
+student656@umich.edu Name656: bg(2) conf(3)(retake)(fast pace)(less comfortable)
+student998@umich.edu Name998: bg(4) conf(5)(retake)(less comfortable)
+student892@umich.edu Name892: bg(2) conf(3)(retake)(fast pace)
+student739@umich.edu Name739: bg(1) conf(2)(retake)(fast pace)
+
+Group 76: s=19 h=10000
+student727@umich.edu Name727: bg(5) conf(5)(fast pace)
+student1021@umich.edu Name1021: bg(4) conf(3)(fast pace)
+student808@umich.edu Name808: bg(5) conf(4)(fast pace)
+
+Group 77: s=19 h=2000
+student287@umich.edu Name287: bg(2) conf(4)
+student837@umich.edu Name837: bg(3) conf(3)
+student543@umich.edu Name543: bg(3) conf(2)(less comfortable)
+student783@umich.edu Name783: bg(4) conf(2)(fast pace)
+
+Group 78: s=19 h=0
+student15@umich.edu Name15: bg(2) conf(4)(fast pace)
+student591@umich.edu Name591: bg(5) conf(3)
+student227@umich.edu Name227: bg(2) conf(3)(less comfortable)
+student439@umich.edu Name439: bg(3) conf(4)(fast pace)(less comfortable)
+
+Group 79: s=19 h=0
+student504@umich.edu Name504: bg(2) conf(3)
+student220@umich.edu Name220: bg(1) conf(3)
+student557@umich.edu Name557: bg(3) conf(3)(fast pace)
+student205@umich.edu Name205: bg(1) conf(5)(fast pace)
+
+Group 80: s=19 h=1000
+student929@umich.edu Name929: bg(3) conf(3)
+student668@umich.edu Name668: bg(3) conf(3)
+student66@umich.edu Name66: bg(2) conf(2)(less comfortable)
+student744@umich.edu Name744: bg(1) conf(2)
+
+Group 81: s=19 h=0
+student280@umich.edu Name280: bg(2) conf(2)
+student833@umich.edu Name833: bg(2) conf(2)(less comfortable)
+student689@umich.edu Name689: bg(1) conf(3)(less comfortable)
+student659@umich.edu Name659: bg(3) conf(2)
+
+Group 82: s=19 h=0
+student1110@umich.edu
+student1218@umich.edu
+student1224@umich.edu
+
+Group 83: s=20 h=0
+student162@umich.edu Name162: bg(4) conf(3)(less comfortable)
+student113@umich.edu Name113: bg(4) conf(3)(fast pace)(less comfortable)
+student63@umich.edu Name63: bg(3) conf(3)(less comfortable)
+student573@umich.edu Name573: bg(4) conf(3)(fast pace)
+
+Group 84: s=20 h=31000
+student976@umich.edu Name976: bg(1) conf(4)(retake)
+student876@umich.edu Name876: bg(2) conf(2)(retake)(fast pace)(less comfortable)
+student1030@umich.edu Name1030: bg(2) conf(2)(retake)(less comfortable)
+
+Group 85: s=20 h=110000
+student476@umich.edu Name476: bg(3) conf(4)
+student1208@umich.edu
+student637@umich.edu Name637: bg(2) conf(3)
+
+Group 86: s=20 h=1000
+student888@umich.edu Name888: bg(3) conf(3)(fast pace)(less comfortable)
+student778@umich.edu Name778: bg(3) conf(2)(less comfortable)
+student692@umich.edu Name692: bg(1) conf(2)(fast pace)
+student61@umich.edu Name61: bg(1) conf(5)(less comfortable)
+
+Group 87: s=20 h=0
+student317@umich.edu Name317: bg(2) conf(2)(fast pace)(less comfortable)
+student310@umich.edu Name310: bg(3) conf(3)(fast pace)
+student947@umich.edu Name947: bg(1) conf(2)(less comfortable)
+student845@umich.edu Name845: bg(1) conf(2)(less comfortable)
+
+Group 88: s=20 h=0
+student596@umich.edu Name596: bg(2) conf(3)
+student309@umich.edu Name309: bg(2) conf(3)
+student457@umich.edu Name457: bg(3) conf(4)(fast pace)
+student594@umich.edu Name594: bg(1) conf(3)(fast pace)
+
+Group 89: s=20 h=0
+student1163@umich.edu
+student1145@umich.edu
+student1150@umich.edu
+student1235@umich.edu
+
+Group 90: s=20 h=0
+student1034@umich.edu Name1034: bg(5) conf(5)(fast pace)
+student335@umich.edu Name335: bg(3) conf(3)
+student469@umich.edu Name469: bg(5) conf(5)(fast pace)
+student567@umich.edu Name567: bg(2) conf(3)
+
+Group 91: s=20 h=0
+student308@umich.edu Name308: bg(3) conf(4)(fast pace)
+student620@umich.edu Name620: bg(4) conf(3)(fast pace)
+student611@umich.edu Name611: bg(3) conf(4)
+student98@umich.edu Name98: bg(2) conf(3)
+
+Group 92: s=21 h=1010000
+student382@umich.edu Name382: bg(2) conf(1)(less comfortable)
+student771@umich.edu Name771: bg(3) conf(2)(retake)(less comfortable)
+student623@umich.edu Name623: bg(3) conf(3)
+
+Group 93: s=21 h=100000
+student1117@umich.edu
+student389@umich.edu Name389: bg(4) conf(4)(fast pace)
+student166@umich.edu Name166: bg(3) conf(4)(fast pace)
+student1144@umich.edu
+
+Group 94: s=21 h=10000
+student189@umich.edu Name189: bg(3) conf(3)(fast pace)
+student440@umich.edu Name440: bg(1) conf(3)(fast pace)
+student116@umich.edu Name116: bg(2) conf(4)
+
+Group 95: s=21 h=0
+student828@umich.edu Name828: bg(1) conf(1)
+student479@umich.edu Name479: bg(3) conf(3)
+student851@umich.edu Name851: bg(3) conf(4)
+student418@umich.edu Name418: bg(2) conf(2)
+
+Group 96: s=21 h=0
+student756@umich.edu Name756: bg(3) conf(3)(fast pace)
+student912@umich.edu Name912: bg(3) conf(4)(fast pace)
+student823@umich.edu Name823: bg(5) conf(5)(fast pace)
+student906@umich.edu Name906: bg(5) conf(3)
+
+Group 97: s=22 h=11000
+student360@umich.edu Name360: bg(2) conf(4)(fast pace)
+student321@umich.edu Name321: bg(1) conf(3)(less comfortable)
+student975@umich.edu Name975: bg(3) conf(3)(less comfortable)
+
+Group 98: s=22 h=0
+student1126@umich.edu
+student1141@umich.edu
+
+Group 99: s=23 h=1000000
+student675@umich.edu Name675: bg(1) conf(1)(fast pace)
+student1032@umich.edu Name1032: bg(2) conf(3)(less comfortable)
+student333@umich.edu Name333: bg(3) conf(2)(retake)(fast pace)
+student36@umich.edu Name36: bg(1) conf(3)(less comfortable)
+
+Group 100: s=23 h=10000
+student368@umich.edu Name368: bg(4) conf(4)(fast pace)
+student970@umich.edu Name970: bg(5) conf(4)(fast pace)
+student81@umich.edu Name81: bg(3) conf(4)(fast pace)
+
+Group 101: s=23 h=0
+student427@umich.edu Name427: bg(1) conf(3)(less comfortable)
+student735@umich.edu Name735: bg(2) conf(4)
+student816@umich.edu Name816: bg(3) conf(3)
+student586@umich.edu Name586: bg(1) conf(3)(less comfortable)
+
+Group 102: s=23 h=0
+student711@umich.edu Name711: bg(3) conf(4)(fast pace)
+student196@umich.edu Name196: bg(3) conf(3)(fast pace)
+student28@umich.edu Name28: bg(2) conf(3)(fast pace)
+student819@umich.edu Name819: bg(1) conf(3)
+
+Group 103: s=23 h=0
+student352@umich.edu Name352: bg(3) conf(3)(less comfortable)
+student399@umich.edu Name399: bg(2) conf(2)
+student503@umich.edu Name503: bg(2) conf(2)(less comfortable)
+student780@umich.edu Name780: bg(1) conf(3)
+
+Group 104: s=23 h=0
+student1201@umich.edu
+student1192@umich.edu
+student1178@umich.edu
+student1080@umich.edu
+
+Group 105: s=23 h=0
+student607@umich.edu Name607: bg(2) conf(4)(fast pace)
+student302@umich.edu Name302: bg(4) conf(4)(fast pace)
+student614@umich.edu Name614: bg(4) conf(5)(fast pace)
+student133@umich.edu Name133: bg(3) conf(3)(fast pace)
+
+Group 106: s=23 h=0
+student1155@umich.edu
+student1102@umich.edu
+student1098@umich.edu
+
+Group 107: s=23 h=0
+student746@umich.edu Name746: bg(4) conf(5)
+student664@umich.edu Name664: bg(4) conf(4)(fast pace)
+student777@umich.edu Name777: bg(4) conf(4)(fast pace)
+student683@umich.edu Name683: bg(4) conf(4)
+
+Group 108: s=24 h=1001000
+student502@umich.edu Name502: bg(1) conf(4)(retake)(less comfortable)
+student272@umich.edu Name272: bg(2) conf(5)(less comfortable)
+student745@umich.edu Name745: bg(2) conf(3)(less comfortable)
+student585@umich.edu Name585: bg(3) conf(3)
+
+Group 109: s=24 h=10000
+student413@umich.edu Name413: bg(4) conf(4)(fast pace)
+student404@umich.edu Name404: bg(2) conf(3)(fast pace)(less comfortable)
+student134@umich.edu Name134: bg(2) conf(3)(less comfortable)
+
+Group 110: s=24 h=10000
+student283@umich.edu Name283: bg(2) conf(2)
+student229@umich.edu Name229: bg(1) conf(1)(fast pace)
+student365@umich.edu Name365: bg(1) conf(3)(fast pace)
+student685@umich.edu Name685: bg(1) conf(2)(fast pace)
+
+Group 111: s=24 h=0
+student680@umich.edu Name680: bg(4) conf(4)(fast pace)
+student149@umich.edu Name149: bg(5) conf(3)(fast pace)
+student409@umich.edu Name409: bg(2) conf(3)
+student869@umich.edu Name869: bg(2) conf(3)
+
+Group 112: s=24 h=0
+student1174@umich.edu
+student1215@umich.edu
+student1062@umich.edu
+student1225@umich.edu
+
+Group 113: s=24 h=0
+student1193@umich.edu
+student1229@umich.edu
+student1180@umich.edu
+
+Group 114: s=25 h=10000
+student431@umich.edu Name431: bg(4) conf(5)(fast pace)
+student608@umich.edu Name608: bg(4) conf(4)(fast pace)
+student339@umich.edu Name339: bg(3) conf(5)(fast pace)
+
+Group 115: s=25 h=1100000
+student103@umich.edu Name103: bg(4) conf(3)(fast pace)
+student1088@umich.edu
+student377@umich.edu Name377: bg(4) conf(3)(retake)(fast pace)
+student1142@umich.edu
+
+Group 116: s=25 h=0
+student497@umich.edu Name497: bg(1) conf(3)(less comfortable)
+student602@umich.edu Name602: bg(1) conf(3)(fast pace)(less comfortable)
+student117@umich.edu Name117: bg(1) conf(3)(fast pace)(less comfortable)
+student379@umich.edu Name379: bg(3) conf(3)(less comfortable)
+
+Group 117: s=25 h=0
+student1038@umich.edu Name1038: bg(2) conf(3)(fast pace)(less comfortable)
+student794@umich.edu Name794: bg(3) conf(3)(less comfortable)
+student153@umich.edu Name153: bg(4) conf(3)
+student456@umich.edu Name456: bg(4) conf(3)(fast pace)
+
+Group 118: s=25 h=0
+student787@umich.edu Name787: bg(3) conf(3)
+student164@umich.edu Name164: bg(3) conf(3)(fast pace)
+student120@umich.edu Name120: bg(3) conf(3)(fast pace)
+student107@umich.edu Name107: bg(3) conf(4)(fast pace)
+
+Group 119: s=25 h=0
+student604@umich.edu Name604: bg(2) conf(2)(fast pace)(less comfortable)
+student673@umich.edu Name673: bg(3) conf(3)
+student85@umich.edu Name85: bg(4) conf(3)(fast pace)(less comfortable)
+student627@umich.edu Name627: bg(3) conf(2)
+
+Group 120: s=25 h=0
+student1100@umich.edu
+student1065@umich.edu
+student1179@umich.edu
+
+Group 121: s=25 h=0
+student903@umich.edu Name903: bg(1) conf(1)(fast pace)
+student1000@umich.edu Name1000: bg(3) conf(3)(fast pace)(less comfortable)
+student295@umich.edu Name295: bg(2) conf(3)
+student468@umich.edu Name468: bg(1) conf(2)(less comfortable)
+
+Group 122: s=25 h=0
+student455@umich.edu Name455: bg(1) conf(4)
+student592@umich.edu Name592: bg(1) conf(3)(less comfortable)
+student901@umich.edu Name901: bg(1) conf(4)(fast pace)
+student968@umich.edu Name968: bg(3) conf(4)(fast pace)(less comfortable)
+
+Group 123: s=26 h=100000
+student717@umich.edu Name717: bg(5) conf(4)(fast pace)
+student1082@umich.edu
+student1147@umich.edu
+student372@umich.edu Name372: bg(4) conf(4)(fast pace)
+
+Group 124: s=26 h=11000
+student993@umich.edu Name993: bg(2) conf(2)(retake)(fast pace)(less comfortable)
+student724@umich.edu Name724: bg(1) conf(3)(retake)
+student187@umich.edu Name187: bg(3) conf(4)(retake)(fast pace)
+student725@umich.edu Name725: bg(3) conf(2)(retake)
+
+Group 125: s=26 h=0
+student534@umich.edu Name534: bg(3) conf(3)
+student424@umich.edu Name424: bg(1) conf(3)
+student878@umich.edu Name878: bg(2) conf(4)(fast pace)
+student999@umich.edu Name999: bg(1) conf(5)(fast pace)
+
+Group 126: s=26 h=0
+student343@umich.edu Name343: bg(2) conf(3)(less comfortable)
+student391@umich.edu Name391: bg(2) conf(2)
+student355@umich.edu Name355: bg(3) conf(3)(fast pace)(less comfortable)
+student618@umich.edu Name618: bg(2) conf(2)(fast pace)(less comfortable)
+
+Group 127: s=26 h=0
+student665@umich.edu Name665: bg(4) conf(3)(fast pace)
+student271@umich.edu Name271: bg(3) conf(3)
+student653@umich.edu Name653: bg(4) conf(5)(fast pace)
+student635@umich.edu Name635: bg(4) conf(4)
+
+Group 128: s=26 h=0
+student1135@umich.edu
+student1114@umich.edu
+student1092@umich.edu
+student1206@umich.edu
+
+Group 129: s=26 h=0
+student666@umich.edu Name666: bg(1) conf(3)(fast pace)(less comfortable)
+student366@umich.edu Name366: bg(2) conf(2)(fast pace)
+student478@umich.edu Name478: bg(2) conf(2)(less comfortable)
+student395@umich.edu Name395: bg(3) conf(2)(less comfortable)
+
+Group 130: s=26 h=0
+student733@umich.edu Name733: bg(1) conf(2)(less comfortable)
+student260@umich.edu Name260: bg(1) conf(2)
+student282@umich.edu Name282: bg(2) conf(3)(fast pace)
+student177@umich.edu Name177: bg(3) conf(2)(fast pace)(less comfortable)
+
+Group 131: s=27 h=11000
+student16@umich.edu Name16: bg(1) conf(3)(retake)
+student323@umich.edu Name323: bg(2) conf(3)(retake)(less comfortable)
+student524@umich.edu Name524: bg(3) conf(4)(retake)
+
+Group 132: s=27 h=11000
+student556@umich.edu Name556: bg(5) conf(4)
+student14@umich.edu Name14: bg(3) conf(4)(fast pace)
+student452@umich.edu Name452: bg(3) conf(3)
+
+Group 133: s=27 h=10000
+student795@umich.edu Name795: bg(2) conf(3)(retake)(fast pace)
+student770@umich.edu Name770: bg(3) conf(2)(retake)(fast pace)(less comfortable)
+student734@umich.edu Name734: bg(1) conf(1)(retake)(less comfortable)
+
+Group 134: s=27 h=10000
+student865@umich.edu Name865: bg(3) conf(3)(less comfortable)
+student101@umich.edu Name101: bg(3) conf(2)
+student810@umich.edu Name810: bg(2) conf(2)(less comfortable)
+
+Group 135: s=27 h=0
+student1222@umich.edu
+student1190@umich.edu
+student1130@umich.edu
+student1048@umich.edu
+
+Group 136: s=27 h=0
+student353@umich.edu Name353: bg(3) conf(1)(fast pace)
+student881@umich.edu Name881: bg(2) conf(2)(less comfortable)
+student221@umich.edu Name221: bg(2) conf(4)
+student977@umich.edu Name977: bg(3) conf(3)(fast pace)(less comfortable)
+
+Group 137: s=27 h=0
+student348@umich.edu Name348: bg(3) conf(3)(fast pace)
+student278@umich.edu Name278: bg(2) conf(3)(fast pace)
+student281@umich.edu Name281: bg(3) conf(5)(fast pace)
+student934@umich.edu Name934: bg(1) conf(3)
+
+Group 138: s=27 h=0
+student105@umich.edu Name105: bg(4) conf(3)(fast pace)
+student276@umich.edu Name276: bg(4) conf(2)(fast pace)
+student753@umich.edu Name753: bg(3) conf(2)(fast pace)
+student180@umich.edu Name180: bg(3) conf(4)
+
+Group 139: s=27 h=0
+student128@umich.edu Name128: bg(1) conf(3)
+student201@umich.edu Name201: bg(3) conf(3)(fast pace)
+student59@umich.edu Name59: bg(2) conf(4)(fast pace)
+student106@umich.edu Name106: bg(1) conf(4)(fast pace)
+
+Group 140: s=28 h=1000000
+student487@umich.edu Name487: bg(2) conf(2)(retake)
+student401@umich.edu Name401: bg(4) conf(3)(fast pace)
+student955@umich.edu Name955: bg(3) conf(3)(fast pace)
+student110@umich.edu Name110: bg(3) conf(2)
+
+Group 141: s=28 h=10000
+student238@umich.edu Name238: bg(4) conf(3)(fast pace)
+student669@umich.edu Name669: bg(3) conf(3)
+student132@umich.edu Name132: bg(4) conf(3)(fast pace)
+
+Group 142: s=28 h=10000
+student948@umich.edu Name948: bg(3) conf(3)(fast pace)
+student1012@umich.edu Name1012: bg(4) conf(4)(fast pace)
+student290@umich.edu Name290: bg(2) conf(3)
+
+Group 143: s=28 h=0
+student1151@umich.edu
+student1089@umich.edu
+student1244@umich.edu
+student1169@umich.edu
+
+Group 144: s=28 h=0
+student192@umich.edu Name192: bg(3) conf(3)(fast pace)(less comfortable)
+student526@umich.edu Name526: bg(2) conf(2)
+student707@umich.edu Name707: bg(1) conf(1)(less comfortable)
+student157@umich.edu Name157: bg(2) conf(3)(fast pace)
+
+Group 145: s=28 h=0
+student463@umich.edu Name463: bg(3) conf(2)(fast pace)
+student730@umich.edu Name730: bg(1) conf(5)
+student638@umich.edu Name638: bg(2) conf(2)(fast pace)
+student233@umich.edu Name233: bg(2) conf(3)(fast pace)
+
+Group 146: s=28 h=0
+student473@umich.edu Name473: bg(1) conf(3)
+student67@umich.edu Name67: bg(1) conf(4)(fast pace)
+student554@umich.edu Name554: bg(2) conf(3)(fast pace)
+student584@umich.edu Name584: bg(3) conf(3)
+
+Group 147: s=28 h=0
+student131@umich.edu Name131: bg(2) conf(3)(less comfortable)
+student408@umich.edu Name408: bg(2) conf(3)
+student169@umich.edu Name169: bg(4) conf(4)(fast pace)
+student575@umich.edu Name575: bg(4) conf(3)(fast pace)(less comfortable)
+
+Group 148: s=28 h=0
+student1123@umich.edu
+student1103@umich.edu
+student1211@umich.edu
+student1084@umich.edu
+
+Group 149: s=29 h=100000
+student630@umich.edu Name630: bg(4) conf(4)(fast pace)
+student135@umich.edu Name135: bg(4) conf(4)(fast pace)
+student1115@umich.edu
+student1079@umich.edu
+
+Group 150: s=29 h=10000
+student645@umich.edu Name645: bg(2) conf(3)(fast pace)
+student835@umich.edu Name835: bg(1) conf(3)
+student571@umich.edu Name571: bg(3) conf(3)(fast pace)
+
+Group 151: s=29 h=0
+student359@umich.edu Name359: bg(4) conf(5)(fast pace)
+student719@umich.edu Name719: bg(5) conf(5)(fast pace)
+student530@umich.edu Name530: bg(3) conf(3)(fast pace)
+student768@umich.edu Name768: bg(4) conf(4)(fast pace)
+
+Group 152: s=29 h=0
+student873@umich.edu Name873: bg(2) conf(3)(fast pace)(less comfortable)
+student610@umich.edu Name610: bg(3) conf(4)(less comfortable)
+student886@umich.edu Name886: bg(3) conf(3)
+student809@umich.edu Name809: bg(3) conf(3)(fast pace)(less comfortable)
+
+Group 153: s=29 h=0
+student1157@umich.edu
+student1217@umich.edu
+student1052@umich.edu
+
+Group 154: s=29 h=0
+student24@umich.edu Name24: bg(1) conf(2)(less comfortable)
+student962@umich.edu Name962: bg(2) conf(3)
+student488@umich.edu Name488: bg(3) conf(2)
+student662@umich.edu Name662: bg(3) conf(2)(less comfortable)
+
+Group 155: s=29 h=0
+student340@umich.edu Name340: bg(1) conf(3)(retake)(less comfortable)
+student936@umich.edu Name936: bg(2) conf(2)(retake)(fast pace)(less comfortable)
+student251@umich.edu Name251: bg(1) conf(2)(retake)
+student856@umich.edu Name856: bg(3) conf(2)(retake)(fast pace)
+
+Group 156: s=29 h=0
+student451@umich.edu Name451: bg(5) conf(4)(fast pace)
+student102@umich.edu Name102: bg(4) conf(5)(fast pace)
+student741@umich.edu Name741: bg(4) conf(3)(fast pace)
+student179@umich.edu Name179: bg(3) conf(3)(fast pace)
+
+Group 157: s=30 h=110000
+student1143@umich.edu
+student358@umich.edu Name358: bg(1) conf(3)
+student1236@umich.edu
+student1165@umich.edu
+
+Group 158: s=30 h=42000
+student887@umich.edu Name887: bg(2) conf(3)(retake)(less comfortable)
+student316@umich.edu Name316: bg(1) conf(2)(retake)
+student304@umich.edu Name304: bg(1) conf(4)(retake)(fast pace)
+
+Group 159: s=30 h=10000
+student919@umich.edu Name919: bg(3) conf(4)(fast pace)
+student670@umich.edu Name670: bg(2) conf(3)
+student796@umich.edu Name796: bg(4) conf(4)(fast pace)
+
+Group 160: s=30 h=1000
+student270@umich.edu Name270: bg(1) conf(3)(fast pace)
+student781@umich.edu Name781: bg(1) conf(3)(fast pace)
+student334@umich.edu Name334: bg(1) conf(4)(fast pace)(less comfortable)
+student916@umich.edu Name916: bg(3) conf(3)
+
+Group 161: s=30 h=1000
+student346@umich.edu Name346: bg(3) conf(3)
+student738@umich.edu Name738: bg(3) conf(3)(fast pace)(less comfortable)
+student435@umich.edu Name435: bg(3) conf(3)(fast pace)
+student927@umich.edu Name927: bg(5) conf(5)(fast pace)(less comfortable)
+
+Group 162: s=30 h=0
+student843@umich.edu Name843: bg(1) conf(1)
+student686@umich.edu Name686: bg(3) conf(2)
+student895@umich.edu Name895: bg(2) conf(3)
+student139@umich.edu Name139: bg(3) conf(4)
+
+Group 163: s=30 h=0
+student210@umich.edu Name210: bg(4) conf(3)
+student89@umich.edu Name89: bg(5) conf(5)(fast pace)
+student574@umich.edu Name574: bg(4) conf(4)(fast pace)
+student547@umich.edu Name547: bg(4) conf(4)(fast pace)
+
+Group 164: s=30 h=0
+student651@umich.edu Name651: bg(3) conf(3)(fast pace)
+student510@umich.edu Name510: bg(2) conf(3)
+student807@umich.edu Name807: bg(4) conf(4)(fast pace)
+student69@umich.edu Name69: bg(3) conf(3)(fast pace)
+
+Group 165: s=30 h=0
+student1031@umich.edu Name1031: bg(3) conf(2)(less comfortable)
+student209@umich.edu Name209: bg(3) conf(2)(fast pace)(less comfortable)
+student489@umich.edu Name489: bg(3) conf(3)(fast pace)
+student826@umich.edu Name826: bg(2) conf(2)(less comfortable)
+
+Group 166: s=31 h=1000000
+student380@umich.edu Name380: bg(3) conf(2)(fast pace)(less comfortable)
+student296@umich.edu Name296: bg(1) conf(3)(fast pace)
+student552@umich.edu Name552: bg(2) conf(2)(retake)(fast pace)
+student170@umich.edu Name170: bg(1) conf(3)(retake)(fast pace)(less comfortable)
+
+Group 167: s=31 h=100000
+student1095@umich.edu
+student1202@umich.edu
+student871@umich.edu Name871: bg(4) conf(3)(fast pace)
+student792@umich.edu Name792: bg(4) conf(4)(fast pace)
+
+Group 168: s=31 h=10000
+student872@umich.edu Name872: bg(5) conf(4)(fast pace)(less comfortable)
+student582@umich.edu Name582: bg(4) conf(3)(fast pace)(less comfortable)
+student203@umich.edu Name203: bg(3) conf(4)(fast pace)
+
+Group 169: s=31 h=0
+student433@umich.edu Name433: bg(1) conf(3)(fast pace)(less comfortable)
+student1018@umich.edu Name1018: bg(1) conf(3)(less comfortable)
+student715@umich.edu Name715: bg(3) conf(1)
+student836@umich.edu Name836: bg(1) conf(2)(fast pace)
+
+Group 170: s=31 h=0
+student274@umich.edu Name274: bg(3) conf(3)(less comfortable)
+student390@umich.edu Name390: bg(2) conf(2)(fast pace)
+student773@umich.edu Name773: bg(1) conf(1)(less comfortable)
+student894@umich.edu Name894: bg(1) conf(3)(fast pace)(less comfortable)
+
+Group 171: s=31 h=0
+student121@umich.edu Name121: bg(4) conf(4)(fast pace)
+student718@umich.edu Name718: bg(4) conf(4)(fast pace)
+student1027@umich.edu Name1027: bg(3) conf(3)
+student370@umich.edu Name370: bg(3) conf(3)(fast pace)
+
+Group 172: s=31 h=0
+student173@umich.edu Name173: bg(3) conf(1)
+student144@umich.edu Name144: bg(1) conf(1)(less comfortable)
+student763@umich.edu Name763: bg(1) conf(1)(less comfortable)
+student971@umich.edu Name971: bg(1) conf(3)
+
+Group 173: s=31 h=0
+student1051@umich.edu
+student1067@umich.edu
+student1223@umich.edu
+
+Group 174: s=31 h=0
+student445@umich.edu Name445: bg(4) conf(4)(fast pace)
+student706@umich.edu Name706: bg(3) conf(4)(fast pace)
+student406@umich.edu Name406: bg(2) conf(3)(fast pace)
+student811@umich.edu Name811: bg(3) conf(4)(fast pace)
+
+Group 175: s=32 h=22000
+student902@umich.edu Name902: bg(3) conf(3)(retake)(fast pace)
+student198@umich.edu Name198: bg(3) conf(3)(retake)
+student498@umich.edu Name498: bg(1) conf(3)(retake)(less comfortable)
+
+Group 176: s=32 h=10000
+student862@umich.edu Name862: bg(1) conf(2)(fast pace)
+student866@umich.edu Name866: bg(3) conf(3)
+student1024@umich.edu Name1024: bg(3) conf(3)(fast pace)
+student443@umich.edu Name443: bg(2) conf(3)(fast pace)
+
+Group 177: s=32 h=10000
+student109@umich.edu Name109: bg(3) conf(3)(fast pace)
+student458@umich.edu Name458: bg(3) conf(3)(fast pace)
+student782@umich.edu Name782: bg(4) conf(5)(fast pace)
+
+Group 178: s=32 h=10000
+student387@umich.edu Name387: bg(3) conf(3)(less comfortable)
+student222@umich.edu Name222: bg(1) conf(3)
+student184@umich.edu Name184: bg(1) conf(3)(less comfortable)
+
+Group 179: s=32 h=1000
+student697@umich.edu Name697: bg(4) conf(4)(less comfortable)
+student698@umich.edu Name698: bg(5) conf(5)(fast pace)(less comfortable)
+student392@umich.edu Name392: bg(2) conf(3)(fast pace)(less comfortable)
+student225@umich.edu Name225: bg(2) conf(3)
+
+Group 180: s=32 h=0
+student1196@umich.edu
+student1071@umich.edu
+student1063@umich.edu
+
+Group 181: s=32 h=0
+student1122@umich.edu
+student1161@umich.edu
+student1170@umich.edu
+student1137@umich.edu
+
+Group 182: s=32 h=0
+student599@umich.edu Name599: bg(5) conf(5)(fast pace)
+student765@umich.edu Name765: bg(5) conf(4)(fast pace)
+student748@umich.edu Name748: bg(4) conf(4)(fast pace)
+student388@umich.edu Name388: bg(4) conf(4)(fast pace)
+
+Group 183: s=32 h=0
+student93@umich.edu Name93: bg(4) conf(4)(fast pace)
+student267@umich.edu Name267: bg(2) conf(3)(fast pace)
+student266@umich.edu Name266: bg(5) conf(5)(fast pace)
+student897@umich.edu Name897: bg(2) conf(3)(fast pace)
+
+Group 184: s=33 h=1010000
+student176@umich.edu Name176: bg(3) conf(3)(retake)(fast pace)
+student423@umich.edu Name423: bg(1) conf(1)(retake)
+student10@umich.edu Name10: bg(4) conf(2)(retake)(fast pace)
+student155@umich.edu Name155: bg(4) conf(2)
+
+Group 185: s=33 h=10000
+student374@umich.edu Name374: bg(3) conf(4)(retake)(fast pace)(less comfortable)
+student415@umich.edu Name415: bg(2) conf(4)(retake)(fast pace)
+student234@umich.edu Name234: bg(1) conf(3)(retake)(fast pace)(less comfortable)
+
+Group 186: s=33 h=1000
+student143@umich.edu Name143: bg(5) conf(4)(fast pace)
+student50@umich.edu Name50: bg(3) conf(3)(fast pace)
+student322@umich.edu Name322: bg(4) conf(4)(less comfortable)
+student626@umich.edu Name626: bg(2) conf(4)
+
+Group 187: s=33 h=0
+student974@umich.edu Name974: bg(4) conf(3)(fast pace)
+student429@umich.edu Name429: bg(3) conf(4)(fast pace)
+student713@umich.edu Name713: bg(4) conf(4)(fast pace)
+student801@umich.edu Name801: bg(4) conf(4)(fast pace)
+
+Group 188: s=33 h=0
+student579@umich.edu Name579: bg(3) conf(3)
+student956@umich.edu Name956: bg(2) conf(3)(fast pace)
+student235@umich.edu Name235: bg(1) conf(5)(fast pace)
+student422@umich.edu Name422: bg(2) conf(3)
+
+Group 189: s=33 h=0
+student1112@umich.edu
+student1099@umich.edu
+student1182@umich.edu
+student1050@umich.edu
+
+Group 190: s=33 h=0
+student73@umich.edu Name73: bg(1) conf(2)(fast pace)
+student362@umich.edu Name362: bg(3) conf(2)(fast pace)
+student1037@umich.edu Name1037: bg(1) conf(4)
+student56@umich.edu Name56: bg(2) conf(3)
+
+Group 191: s=33 h=0
+student354@umich.edu Name354: bg(1) conf(4)(fast pace)(less comfortable)
+student935@umich.edu Name935: bg(1) conf(4)(fast pace)
+student275@umich.edu Name275: bg(3) conf(3)(fast pace)(less comfortable)
+student490@umich.edu Name490: bg(1) conf(3)(fast pace)(less comfortable)
+
+Group 192: s=34 h=1000000
+student194@umich.edu Name194: bg(4) conf(3)
+student188@umich.edu Name188: bg(3) conf(3)
+student125@umich.edu Name125: bg(4) conf(3)(retake)(fast pace)
+student26@umich.edu Name26: bg(3) conf(4)(fast pace)
+
+Group 193: s=34 h=1000
+student989@umich.edu Name989: bg(3) conf(3)(fast pace)(less comfortable)
+student195@umich.edu Name195: bg(3) conf(4)
+student44@umich.edu Name44: bg(1) conf(5)(fast pace)
+student23@umich.edu Name23: bg(1) conf(3)(less comfortable)
+
+Group 194: s=34 h=1000
+student471@umich.edu Name471: bg(2) conf(2)(fast pace)
+student695@umich.edu Name695: bg(2) conf(2)(less comfortable)
+student232@umich.edu Name232: bg(3) conf(3)(fast pace)
+student127@umich.edu Name127: bg(1) conf(2)
+
+Group 195: s=34 h=0
+student1016@umich.edu Name1016: bg(2) conf(3)(fast pace)
+student51@umich.edu Name51: bg(4) conf(3)(fast pace)
+student984@umich.edu Name984: bg(4) conf(4)(fast pace)
+student708@umich.edu Name708: bg(3) conf(3)
+
+Group 196: s=34 h=0
+student1055@umich.edu
+student1136@umich.edu
+student1042@umich.edu
+student1076@umich.edu
+
+Group 197: s=34 h=0
+student407@umich.edu Name407: bg(4) conf(3)(fast pace)
+student1008@umich.edu Name1008: bg(4) conf(4)(fast pace)
+student758@umich.edu Name758: bg(4) conf(4)(fast pace)
+student70@umich.edu Name70: bg(5) conf(4)(fast pace)
+
+Group 198: s=35 h=100000
+student505@umich.edu Name505: bg(4) conf(5)(fast pace)
+student1085@umich.edu
+student663@umich.edu Name663: bg(5) conf(5)(fast pace)
+student1234@umich.edu
+
+Group 199: s=35 h=21000
+student1039@umich.edu Name1039: bg(1) conf(3)(retake)(fast pace)
+student939@umich.edu Name939: bg(2) conf(1)(retake)(less comfortable)
+student324@umich.edu Name324: bg(2) conf(2)(retake)(less comfortable)
+
+Group 200: s=35 h=10000
+student397@umich.edu Name397: bg(4) conf(5)(fast pace)
+student751@umich.edu Name751: bg(5) conf(4)(fast pace)
+student640@umich.edu Name640: bg(5) conf(5)(fast pace)
+
+Group 201: s=35 h=10000
+student466@umich.edu Name466: bg(3) conf(2)(less comfortable)
+student190@umich.edu Name190: bg(3) conf(2)(less comfortable)
+student533@umich.edu Name533: bg(3) conf(3)
+
+Group 202: s=35 h=0
+student821@umich.edu Name821: bg(1) conf(2)(fast pace)
+student104@umich.edu Name104: bg(3) conf(3)(fast pace)
+student940@umich.edu Name940: bg(2) conf(3)(less comfortable)
+student507@umich.edu Name507: bg(1) conf(1)(less comfortable)
+
+Group 203: s=35 h=0
+student882@umich.edu Name882: bg(4) conf(4)(fast pace)
+student148@umich.edu Name148: bg(4) conf(4)(less comfortable)
+student223@umich.edu Name223: bg(4) conf(4)(fast pace)
+student492@umich.edu Name492: bg(3) conf(3)(less comfortable)
+
+Group 204: s=35 h=0
+student1213@umich.edu
+student1101@umich.edu
+student1056@umich.edu
+student1219@umich.edu
+
+Group 205: s=35 h=0
+student1077@umich.edu
+student1106@umich.edu
+student1128@umich.edu
+
+Group 206: s=35 h=0
+student918@umich.edu Name918: bg(1) conf(2)
+student11@umich.edu Name11: bg(2) conf(2)
+student643@umich.edu Name643: bg(3) conf(3)(fast pace)
+student185@umich.edu Name185: bg(1) conf(3)(fast pace)
+
+Group 207: s=36 h=1000000
+student933@umich.edu Name933: bg(4) conf(4)(retake)(less comfortable)
+student258@umich.edu Name258: bg(3) conf(2)(fast pace)
+student72@umich.edu Name72: bg(3) conf(3)(fast pace)
+student563@umich.edu Name563: bg(3) conf(2)(retake)(less comfortable)
+
+Group 208: s=36 h=100000
+student65@umich.edu Name65: bg(5) conf(5)(fast pace)
+student1197@umich.edu
+student639@umich.edu Name639: bg(4) conf(4)(fast pace)
+student1203@umich.edu
+
+Group 209: s=36 h=10000
+student757@umich.edu Name757: bg(5) conf(5)(fast pace)
+student62@umich.edu Name62: bg(3) conf(3)(fast pace)
+student917@umich.edu Name917: bg(3) conf(4)(fast pace)
+
+Group 210: s=36 h=1000
+student298@umich.edu Name298: bg(1) conf(2)
+student419@umich.edu Name419: bg(3) conf(2)(fast pace)(less comfortable)
+student755@umich.edu Name755: bg(1) conf(3)(fast pace)
+student124@umich.edu Name124: bg(1) conf(4)
+
+Group 211: s=36 h=0
+student224@umich.edu Name224: bg(3) conf(3)(less comfortable)
+student1036@umich.edu Name1036: bg(1) conf(2)(less comfortable)
+student326@umich.edu Name326: bg(3) conf(3)
+student460@umich.edu Name460: bg(1) conf(2)
+
+Group 212: s=36 h=0
+student931@umich.edu Name931: bg(2) conf(2)(retake)(fast pace)
+student619@umich.edu Name619: bg(3) conf(3)(retake)(fast pace)
+student885@umich.edu Name885: bg(2) conf(2)(retake)(fast pace)
+student710@umich.edu Name710: bg(3) conf(3)(retake)
+
+Group 213: s=36 h=0
+student1132@umich.edu
+student1064@umich.edu
+student1058@umich.edu
+
+Group 214: s=36 h=0
+student37@umich.edu Name37: bg(5) conf(4)(fast pace)
+student32@umich.edu Name32: bg(4) conf(4)(fast pace)
+student215@umich.edu Name215: bg(4) conf(3)(fast pace)
+student726@umich.edu Name726: bg(4) conf(4)(fast pace)
+
+Group 215: s=36 h=0
+student992@umich.edu Name992: bg(4) conf(4)(fast pace)
+student495@umich.edu Name495: bg(4) conf(4)(fast pace)
+student1023@umich.edu Name1023: bg(3) conf(4)(fast pace)(less comfortable)
+student559@umich.edu Name559: bg(2) conf(3)(fast pace)(less comfortable)
+
+Group 216: s=37 h=1000000
+student126@umich.edu Name126: bg(3) conf(4)(retake)(fast pace)
+student49@umich.edu Name49: bg(3) conf(3)
+student988@umich.edu Name988: bg(4) conf(3)(retake)(fast pace)
+student414@umich.edu Name414: bg(4) conf(4)
+
+Group 217: s=37 h=10000
+student877@umich.edu Name877: bg(2) conf(4)
+student17@umich.edu Name17: bg(5) conf(5)(fast pace)
+student257@umich.edu Name257: bg(3) conf(3)(fast pace)
+
+Group 218: s=37 h=1000
+student590@umich.edu Name590: bg(3) conf(3)(fast pace)
+student268@umich.edu Name268: bg(1) conf(3)(fast pace)
+student48@umich.edu Name48: bg(2) conf(5)(fast pace)(less comfortable)
+student231@umich.edu Name231: bg(1) conf(4)(fast pace)(less comfortable)
+
+Group 219: s=37 h=1000
+student813@umich.edu Name813: bg(1) conf(2)
+student237@umich.edu Name237: bg(3) conf(3)(fast pace)
+student631@umich.edu Name631: bg(2) conf(1)(fast pace)
+student775@umich.edu Name775: bg(1) conf(2)(less comfortable)
+
+Group 220: s=37 h=0
+student1083@umich.edu
+student1162@umich.edu
+student1053@umich.edu
+student1227@umich.edu
+
+Group 221: s=37 h=0
+student527@umich.edu Name527: bg(1) conf(4)
+student206@umich.edu Name206: bg(2) conf(4)(fast pace)
+student558@umich.edu Name558: bg(3) conf(4)(fast pace)
+student152@umich.edu Name152: bg(2) conf(3)
+
+Group 222: s=37 h=0
+student861@umich.edu Name861: bg(4) conf(4)(less comfortable)
+student320@umich.edu Name320: bg(2) conf(4)
+student34@umich.edu Name34: bg(3) conf(3)(fast pace)
+student22@umich.edu Name22: bg(3) conf(3)(fast pace)(less comfortable)
+
+Group 223: s=37 h=0
+student19@umich.edu Name19: bg(2) conf(3)
+student850@umich.edu Name850: bg(3) conf(4)
+student485@umich.edu Name485: bg(1) conf(3)(fast pace)
+student1035@umich.edu Name1035: bg(2) conf(3)(fast pace)
+
+Group 224: s=37 h=0
+student1131@umich.edu
+student1127@umich.edu
+student1081@umich.edu
+
+Group 225: s=38 h=100000
+student1175@umich.edu
+student13@umich.edu Name13: bg(5) conf(5)(fast pace)
+student847@umich.edu Name847: bg(5) conf(5)(fast pace)
+student1154@umich.edu
+
+Group 226: s=38 h=31000
+student438@umich.edu Name438: bg(1) conf(2)(retake)
+student769@umich.edu Name769: bg(4) conf(4)(retake)(fast pace)
+student330@umich.edu Name330: bg(3) conf(4)(retake)(less comfortable)
+student958@umich.edu Name958: bg(2) conf(2)(retake)(less comfortable)
+
+Group 227: s=38 h=10000
+student306@umich.edu Name306: bg(3) conf(4)(fast pace)
+student704@umich.edu Name704: bg(1) conf(3)
+student18@umich.edu Name18: bg(1) conf(3)(fast pace)
+
+Group 228: s=38 h=11000
+student961@umich.edu Name961: bg(3) conf(2)(less comfortable)
+student332@umich.edu Name332: bg(1) conf(3)
+student114@umich.edu Name114: bg(1) conf(2)
+
+Group 229: s=38 h=0
+student449@umich.edu Name449: bg(3) conf(3)
+student151@umich.edu Name151: bg(5) conf(5)(fast pace)
+student532@umich.edu Name532: bg(5) conf(3)(fast pace)
+student1041@umich.edu Name1041: bg(2) conf(4)(fast pace)
+
+Group 230: s=38 h=0
+student754@umich.edu Name754: bg(1) conf(3)(fast pace)(less comfortable)
+student305@umich.edu Name305: bg(3) conf(2)(fast pace)
+student444@umich.edu Name444: bg(1) conf(2)
+student474@umich.edu Name474: bg(1) conf(2)(less comfortable)
+
+Group 231: s=38 h=0
+student899@umich.edu Name899: bg(4) conf(3)(fast pace)(less comfortable)
+student130@umich.edu Name130: bg(5) conf(4)(fast pace)(less comfortable)
+student926@umich.edu Name926: bg(5) conf(4)(fast pace)
+student722@umich.edu Name722: bg(4) conf(3)
+
+Group 232: s=38 h=0
+student264@umich.edu Name264: bg(3) conf(4)
+student383@umich.edu Name383: bg(2) conf(2)(less comfortable)
+student914@umich.edu Name914: bg(2) conf(3)(fast pace)
+student400@umich.edu Name400: bg(3) conf(2)(fast pace)(less comfortable)
+
+Group 233: s=38 h=0
+student256@umich.edu Name256: bg(5) conf(5)(fast pace)
+student521@umich.edu Name521: bg(5) conf(5)(fast pace)
+student96@umich.edu Name96: bg(5) conf(5)(fast pace)
+student432@umich.edu Name432: bg(4) conf(3)
+
+Group 234: s=39 h=1000000
+student605@umich.edu Name605: bg(2) conf(4)(retake)(less comfortable)
+student806@umich.edu Name806: bg(4) conf(3)(retake)(fast pace)
+student1005@umich.edu Name1005: bg(2) conf(3)(less comfortable)
+student854@umich.edu Name854: bg(4) conf(4)(fast pace)
+
+Group 235: s=39 h=11000
+student657@umich.edu Name657: bg(3) conf(3)(fast pace)(less comfortable)
+student230@umich.edu Name230: bg(3) conf(2)
+student540@umich.edu Name540: bg(2) conf(2)(less comfortable)
+
+Group 236: s=39 h=10000
+student572@umich.edu Name572: bg(4) conf(4)(fast pace)
+student536@umich.edu Name536: bg(5) conf(5)(fast pace)
+student60@umich.edu Name60: bg(4) conf(4)(fast pace)
+
+Group 237: s=39 h=0
+student589@umich.edu Name589: bg(3) conf(2)
+student802@umich.edu Name802: bg(2) conf(3)
+student859@umich.edu Name859: bg(3) conf(2)(fast pace)
+student261@umich.edu Name261: bg(4) conf(3)(fast pace)
+
+Group 238: s=39 h=0
+student214@umich.edu Name214: bg(3) conf(3)(fast pace)(less comfortable)
+student421@umich.edu Name421: bg(2) conf(4)
+student20@umich.edu Name20: bg(3) conf(3)
+student750@umich.edu Name750: bg(1) conf(3)(fast pace)(less comfortable)
+
+Group 239: s=39 h=0
+student1087@umich.edu
+student1091@umich.edu
+student1070@umich.edu
+student1090@umich.edu
+
+Group 240: s=39 h=0
+student1187@umich.edu
+student1097@umich.edu
+student1078@umich.edu
+student1049@umich.edu
+
+Group 241: s=39 h=0
+student426@umich.edu Name426: bg(4) conf(4)(fast pace)
+student908@umich.edu Name908: bg(3) conf(4)(fast pace)
+student634@umich.edu Name634: bg(3) conf(4)
+student884@umich.edu Name884: bg(3) conf(3)(fast pace)
+
+Group 242: s=39 h=0
+student815@umich.edu Name815: bg(3) conf(3)(fast pace)
+student245@umich.edu Name245: bg(1) conf(3)(fast pace)
+student621@umich.edu Name621: bg(2) conf(3)
+student75@umich.edu Name75: bg(1) conf(3)(fast pace)
+
+Group 243: s=40 h=1000000
+student263@umich.edu Name263: bg(3) conf(4)(fast pace)
+student737@umich.edu Name737: bg(4) conf(3)(retake)(less comfortable)
+student158@umich.edu Name158: bg(4) conf(4)(retake)(fast pace)
+student246@umich.edu Name246: bg(3) conf(3)(less comfortable)
+
+Group 244: s=40 h=10000
+student923@umich.edu Name923: bg(3) conf(4)(retake)(fast pace)
+student1025@umich.edu Name1025: bg(3) conf(3)(retake)(less comfortable)
+student410@umich.edu Name410: bg(2) conf(3)(retake)(fast pace)(less comfortable)
+
+Group 245: s=40 h=10000
+student385@umich.edu Name385: bg(3) conf(5)(fast pace)
+student86@umich.edu Name86: bg(3) conf(4)(fast pace)
+student667@umich.edu Name667: bg(5) conf(4)(fast pace)
+
+Group 246: s=40 h=0
+student186@umich.edu Name186: bg(1) conf(2)
+student578@umich.edu Name578: bg(3) conf(3)(fast pace)
+student1029@umich.edu Name1029: bg(2) conf(2)(fast pace)
+student160@umich.edu Name160: bg(3) conf(3)
+
+Group 247: s=40 h=0
+student253@umich.edu Name253: bg(4) conf(4)(fast pace)(less comfortable)
+student597@umich.edu Name597: bg(4) conf(4)(fast pace)(less comfortable)
+student983@umich.edu Name983: bg(4) conf(4)(fast pace)
+student849@umich.edu Name849: bg(5) conf(4)(fast pace)
+
+Group 248: s=40 h=0
+student1068@umich.edu
+student1069@umich.edu
+student1057@umich.edu
+student1046@umich.edu
+
+Group 249: s=40 h=0
+student52@umich.edu Name52: bg(5) conf(5)
+student699@umich.edu Name699: bg(3) conf(4)(fast pace)
+student952@umich.edu Name952: bg(3) conf(4)(fast pace)
+student978@umich.edu Name978: bg(3) conf(4)
+
+Group 250: s=40 h=0
+student911@umich.edu Name911: bg(3) conf(5)(fast pace)
+student652@umich.edu Name652: bg(5) conf(5)(fast pace)
+student654@umich.edu Name654: bg(3) conf(5)(fast pace)
+student356@umich.edu Name356: bg(4) conf(3)(fast pace)
+
+Group 251: s=40 h=0
+student915@umich.edu Name915: bg(3) conf(3)
+student99@umich.edu Name99: bg(3) conf(3)(less comfortable)
+student119@umich.edu Name119: bg(3) conf(3)(less comfortable)
+student27@umich.edu Name27: bg(3) conf(3)(less comfortable)
+
+Group 252: s=41 h=30000
+student129@umich.edu Name129: bg(1) conf(2)(retake)(less comfortable)
+student690@umich.edu Name690: bg(2) conf(1)(retake)(less comfortable)
+student141@umich.edu Name141: bg(1) conf(2)(retake)
+
+Group 253: s=41 h=10000
+student874@umich.edu Name874: bg(4) conf(1)(fast pace)
+student312@umich.edu Name312: bg(1) conf(3)(fast pace)
+student625@umich.edu Name625: bg(4) conf(2)
+student216@umich.edu Name216: bg(1) conf(3)
+
+Group 254: s=41 h=10000
+student959@umich.edu Name959: bg(3) conf(4)(retake)(fast pace)(less comfortable)
+student820@umich.edu Name820: bg(3) conf(4)(retake)(less comfortable)
+student213@umich.edu Name213: bg(3) conf(3)(retake)(fast pace)(less comfortable)
+
+Group 255: s=41 h=12000
+student122@umich.edu Name122: bg(1) conf(4)
+student357@umich.edu Name357: bg(4) conf(5)(fast pace)(less comfortable)
+student259@umich.edu Name259: bg(5) conf(5)(fast pace)
+student6@umich.edu Name6: bg(5) conf(4)(fast pace)
+
+Group 256: s=41 h=0
+student994@umich.edu Name994: bg(1) conf(4)(fast pace)
+student513@umich.edu Name513: bg(2) conf(4)(fast pace)
+student565@umich.edu Name565: bg(3) conf(3)(less comfortable)
+student172@umich.edu Name172: bg(1) conf(3)(less comfortable)
+
+Group 257: s=41 h=0
+student1113@umich.edu
+student1149@umich.edu
+student1073@umich.edu
+
+Group 258: s=41 h=0
+student682@umich.edu Name682: bg(2) conf(3)(less comfortable)
+student544@umich.edu Name544: bg(1) conf(3)(fast pace)(less comfortable)
+student244@umich.edu Name244: bg(3) conf(3)
+student951@umich.edu Name951: bg(2) conf(4)(fast pace)
+
+Group 259: s=41 h=0
+student252@umich.edu Name252: bg(2) conf(2)
+student1019@umich.edu Name1019: bg(3) conf(3)(fast pace)
+student200@umich.edu Name200: bg(3) conf(3)(fast pace)
+student1022@umich.edu Name1022: bg(2) conf(1)
+
+Group 260: s=41 h=0
+student211@umich.edu Name211: bg(3) conf(3)(fast pace)
+student587@umich.edu Name587: bg(3) conf(4)(fast pace)
+student759@umich.edu Name759: bg(5) conf(5)(fast pace)
+student218@umich.edu Name218: bg(5) conf(5)(fast pace)
+
+Group 261: s=42 h=100000
+student248@umich.edu Name248: bg(3) conf(3)
+student1139@umich.edu
+student564@umich.edu Name564: bg(2) conf(3)
+student1134@umich.edu
+
+Group 262: s=42 h=10000
+student853@umich.edu Name853: bg(3) conf(3)(fast pace)
+student84@umich.edu Name84: bg(1) conf(3)
+student834@umich.edu Name834: bg(2) conf(4)(fast pace)
+
+Group 263: s=42 h=10000
+student553@umich.edu Name553: bg(4) conf(4)(fast pace)
+student41@umich.edu Name41: bg(3) conf(3)(fast pace)
+student92@umich.edu Name92: bg(5) conf(3)
+
+Group 264: s=42 h=10000
+student898@umich.edu Name898: bg(5) conf(4)(fast pace)
+student520@umich.edu Name520: bg(4) conf(3)(less comfortable)
+student655@umich.edu Name655: bg(4) conf(4)(fast pace)(less comfortable)
+
+Group 265: s=42 h=1000
+student981@umich.edu Name981: bg(1) conf(2)(retake)(fast pace)
+student522@umich.edu Name522: bg(1) conf(2)(retake)(fast pace)
+student393@umich.edu Name393: bg(1) conf(2)(retake)(less comfortable)
+student600@umich.edu Name600: bg(3) conf(3)(retake)
+
+Group 266: s=42 h=0
+student712@umich.edu Name712: bg(1) conf(2)(less comfortable)
+student38@umich.edu Name38: bg(2) conf(2)(fast pace)
+student920@umich.edu Name920: bg(3) conf(3)(less comfortable)
+student1028@umich.edu Name1028: bg(1) conf(1)(fast pace)
+
+Group 267: s=42 h=0
+student528@umich.edu Name528: bg(2) conf(3)
+student511@umich.edu Name511: bg(1) conf(4)
+student569@umich.edu Name569: bg(1) conf(3)(fast pace)(less comfortable)
+student797@umich.edu Name797: bg(3) conf(3)(fast pace)(less comfortable)
+
+Group 268: s=42 h=0
+student79@umich.edu Name79: bg(5) conf(4)(fast pace)
+student29@umich.edu Name29: bg(2) conf(5)(fast pace)
+student461@umich.edu Name461: bg(2) conf(3)(fast pace)
+student678@umich.edu Name678: bg(4) conf(5)(fast pace)
+
+Group 269: s=42 h=0
+student523@umich.edu Name523: bg(4) conf(4)(fast pace)
+student329@umich.edu Name329: bg(4) conf(5)(fast pace)
+student71@umich.edu Name71: bg(4) conf(4)(fast pace)
+student1009@umich.edu Name1009: bg(4) conf(4)(fast pace)
+
+Group 270: s=43 h=100000
+student1116@umich.edu
+student537@umich.edu Name537: bg(4) conf(3)(fast pace)
+student1108@umich.edu
+student136@umich.edu Name136: bg(4) conf(4)(fast pace)
+
+Group 271: s=43 h=20000
+student249@umich.edu Name249: bg(3) conf(4)(retake)(fast pace)
+student852@umich.edu Name852: bg(5) conf(4)(retake)
+student371@umich.edu Name371: bg(5) conf(4)(retake)(fast pace)
+
+Group 272: s=43 h=10000
+student7@umich.edu Name7: bg(4) conf(4)(fast pace)
+student376@umich.edu Name376: bg(3) conf(3)(fast pace)
+student909@umich.edu Name909: bg(2) conf(3)
+
+Group 273: s=43 h=1000
+student21@umich.edu Name21: bg(3) conf(3)(fast pace)
+student291@umich.edu Name291: bg(1) conf(3)
+student197@umich.edu Name197: bg(1) conf(3)
+student118@umich.edu Name118: bg(3) conf(3)
+
+Group 274: s=43 h=1000
+student494@umich.edu Name494: bg(3) conf(2)(less comfortable)
+student436@umich.edu Name436: bg(2) conf(2)
+student1033@umich.edu Name1033: bg(2) conf(5)(less comfortable)
+student870@umich.edu Name870: bg(1) conf(3)
+
+Group 275: s=43 h=0
+student1096@umich.edu
+student1138@umich.edu
+student1045@umich.edu
+student1124@umich.edu
+
+Group 276: s=43 h=0
+student411@umich.edu Name411: bg(4) conf(4)(fast pace)
+student581@umich.edu Name581: bg(4) conf(3)
+student890@umich.edu Name890: bg(2) conf(3)(fast pace)
+student351@umich.edu Name351: bg(3) conf(4)(fast pace)
+
+Group 277: s=43 h=0
+student1109@umich.edu
+student1210@umich.edu
+student1168@umich.edu
+
+Group 278: s=43 h=0
+student174@umich.edu Name174: bg(3) conf(2)(fast pace)
+student484@umich.edu Name484: bg(1) conf(3)(less comfortable)
+student1017@umich.edu Name1017: bg(1) conf(2)
+student509@umich.edu Name509: bg(3) conf(2)(fast pace)(less comfortable)
+
+Group 279: s=44 h=1010000
+student87@umich.edu Name87: bg(1) conf(2)(retake)
+student1003@umich.edu Name1003: bg(3) conf(3)(fast pace)(less comfortable)
+student465@umich.edu Name465: bg(1) conf(2)(fast pace)(less comfortable)
+
+Group 280: s=44 h=10000
+student822@umich.edu Name822: bg(5) conf(4)(fast pace)
+student285@umich.edu Name285: bg(4) conf(4)(fast pace)
+student150@umich.edu Name150: bg(5) conf(4)(fast pace)
+
+Group 281: s=44 h=0
+student568@umich.edu Name568: bg(1) conf(2)(fast pace)(less comfortable)
+student743@umich.edu Name743: bg(1) conf(2)
+student8@umich.edu Name8: bg(3) conf(3)
+student702@umich.edu Name702: bg(1) conf(1)(fast pace)(less comfortable)
+
+Group 282: s=44 h=0
+student995@umich.edu Name995: bg(3) conf(3)(less comfortable)
+student45@umich.edu Name45: bg(2) conf(3)(less comfortable)
+student5@umich.edu Name5: bg(2) conf(3)(fast pace)
+student867@umich.edu Name867: bg(2) conf(4)(fast pace)
+
+Group 283: s=44 h=0
+student1172@umich.edu
+student1183@umich.edu
+student1093@umich.edu
+
+Group 284: s=44 h=0
+student183@umich.edu Name183: bg(1) conf(3)
+student182@umich.edu Name182: bg(2) conf(3)
+student694@umich.edu Name694: bg(3) conf(3)
+student606@umich.edu Name606: bg(2) conf(4)
+
+Group 285: s=44 h=0
+student1043@umich.edu
+student1059@umich.edu
+student1176@umich.edu
+
+Group 286: s=44 h=0
+student709@umich.edu Name709: bg(1) conf(4)(fast pace)
+student907@umich.edu Name907: bg(2) conf(5)(fast pace)
+student943@umich.edu Name943: bg(1) conf(4)
+student922@umich.edu Name922: bg(3) conf(4)(fast pace)
+
+Group 287: s=44 h=0
+student990@umich.edu Name990: bg(4) conf(3)(fast pace)
+student240@umich.edu Name240: bg(4) conf(4)(fast pace)
+student997@umich.edu Name997: bg(2) conf(5)
+student191@umich.edu Name191: bg(2) conf(3)
+
+Group 288: s=45 h=1001000
+student938@umich.edu Name938: bg(5) conf(5)(fast pace)(less comfortable)
+student674@umich.edu Name674: bg(3) conf(3)(retake)(fast pace)(less comfortable)
+student790@umich.edu Name790: bg(2) conf(3)(retake)(fast pace)
+student576@umich.edu Name576: bg(4) conf(4)(fast pace)
+
+Group 289: s=45 h=100000
+student1047@umich.edu
+student595@umich.edu Name595: bg(3) conf(4)(fast pace)
+student539@umich.edu Name539: bg(4) conf(4)(fast pace)
+student1164@umich.edu
+
+Group 290: s=45 h=0
+student448@umich.edu Name448: bg(1) conf(1)
+student91@umich.edu Name91: bg(3) conf(3)(fast pace)(less comfortable)
+student786@umich.edu Name786: bg(1) conf(1)
+student470@umich.edu Name470: bg(3) conf(2)(fast pace)(less comfortable)
+
+Group 291: s=45 h=0
+student723@umich.edu Name723: bg(4) conf(3)
+student732@umich.edu Name732: bg(3) conf(2)(less comfortable)
+student991@umich.edu Name991: bg(3) conf(2)(less comfortable)
+student921@umich.edu Name921: bg(2) conf(1)
+
+Group 292: s=45 h=0
+student140@umich.edu Name140: bg(3) conf(3)(fast pace)
+student88@umich.edu Name88: bg(4) conf(2)
+student860@umich.edu Name860: bg(4) conf(1)
+student855@umich.edu Name855: bg(5) conf(3)(fast pace)
+
+Group 293: s=45 h=0
+student812@umich.edu Name812: bg(2) conf(2)(less comfortable)
+student2@umich.edu Name2: bg(2) conf(3)(fast pace)
+student364@umich.edu Name364: bg(3) conf(4)
+student1@umich.edu Name1: bg(1) conf(1)(fast pace)(less comfortable)
+
+Group 294: s=45 h=0
+student803@umich.edu Name803: bg(3) conf(3)
+student212@umich.edu Name212: bg(1) conf(3)(less comfortable)
+student250@umich.edu Name250: bg(1) conf(4)(fast pace)
+student701@umich.edu Name701: bg(3) conf(3)(fast pace)(less comfortable)
+
+Group 295: s=45 h=0
+student68@umich.edu Name68: bg(3) conf(4)(fast pace)
+student633@umich.edu Name633: bg(1) conf(3)(fast pace)
+student966@umich.edu Name966: bg(2) conf(3)
+student464@umich.edu Name464: bg(3) conf(4)(fast pace)
+
+Group 296: s=45 h=0
+student1074@umich.edu
+student1160@umich.edu
+student1214@umich.edu
+
+Group 297: s=46 h=1011000
+student43@umich.edu Name43: bg(4) conf(4)(retake)(fast pace)(less comfortable)
+student774@umich.edu Name774: bg(4) conf(3)(fast pace)
+student541@umich.edu Name541: bg(2) conf(1)
+student721@umich.edu Name721: bg(2) conf(2)(retake)
+
+Group 298: s=46 h=11000
+student3@umich.edu Name3: bg(1) conf(1)(less comfortable)
+student624@umich.edu Name624: bg(1) conf(1)(fast pace)
+student841@umich.edu Name841: bg(1) conf(2)
+student817@umich.edu Name817: bg(1) conf(3)(less comfortable)
+
+Group 299: s=46 h=1000
+student827@umich.edu Name827: bg(1) conf(3)(retake)(fast pace)
+student980@umich.edu Name980: bg(2) conf(4)(retake)(less comfortable)
+student646@umich.edu Name646: bg(3) conf(5)(retake)(fast pace)
+student858@umich.edu Name858: bg(1) conf(3)(retake)(less comfortable)
+
+Group 300: s=46 h=0
+student688@umich.edu Name688: bg(3) conf(3)(less comfortable)
+student982@umich.edu Name982: bg(2) conf(2)(less comfortable)
+student1040@umich.edu Name1040: bg(1) conf(2)(fast pace)(less comfortable)
+student603@umich.edu Name603: bg(1) conf(3)(fast pace)
+
+Group 301: s=46 h=0
+student284@umich.edu Name284: bg(2) conf(3)
+student288@umich.edu Name288: bg(3) conf(4)
+student889@umich.edu Name889: bg(1) conf(3)
+student345@umich.edu Name345: bg(3) conf(3)
+
+Group 302: s=46 h=0
+student76@umich.edu Name76: bg(3) conf(3)
+student171@umich.edu Name171: bg(1) conf(3)(less comfortable)
+student236@umich.edu Name236: bg(1) conf(3)
+student269@umich.edu Name269: bg(1) conf(3)(less comfortable)
+
+Group 303: s=46 h=0
+student1238@umich.edu
+student1195@umich.edu
+student1072@umich.edu
+
+Group 304: s=46 h=0
+student944@umich.edu Name944: bg(2) conf(3)(fast pace)
+student700@umich.edu Name700: bg(1) conf(3)
+student793@umich.edu Name793: bg(3) conf(3)
+student363@umich.edu Name363: bg(2) conf(3)(fast pace)
+
+Group 305: s=46 h=0
+student299@umich.edu Name299: bg(4) conf(4)(fast pace)
+student531@umich.edu Name531: bg(3) conf(3)(fast pace)
+student766@umich.edu Name766: bg(4) conf(4)(fast pace)
+student475@umich.edu Name475: bg(4) conf(4)(fast pace)
+
+Group 306: s=47 h=1011000
+student577@umich.edu Name577: bg(1) conf(3)(retake)(fast pace)(less comfortable)
+student178@umich.edu Name178: bg(4) conf(5)(retake)(fast pace)(less comfortable)
+student361@umich.edu Name361: bg(5) conf(5)(fast pace)
+student904@umich.edu Name904: bg(1) conf(5)(fast pace)
+
+Group 307: s=47 h=10000
+student74@umich.edu Name74: bg(2) conf(2)(fast pace)
+student80@umich.edu Name80: bg(1) conf(2)(fast pace)
+student405@umich.edu Name405: bg(3) conf(3)
+
+Group 308: s=47 h=10000
+student671@umich.edu Name671: bg(5) conf(4)(fast pace)
+student112@umich.edu Name112: bg(4) conf(4)(fast pace)
+student560@umich.edu Name560: bg(4) conf(4)(fast pace)
+
+Group 309: s=47 h=10000
+student641@umich.edu Name641: bg(4) conf(4)(fast pace)
+student789@umich.edu Name789: bg(3) conf(3)(less comfortable)
+student4@umich.edu Name4: bg(2) conf(3)(fast pace)(less comfortable)
+
+Group 310: s=47 h=0
+student548@umich.edu Name548: bg(1) conf(1)
+student95@umich.edu Name95: bg(3) conf(3)(fast pace)
+student163@umich.edu Name163: bg(2) conf(4)
+student760@umich.edu Name760: bg(1) conf(1)(fast pace)
+
+Group 311: s=47 h=0
+student946@umich.edu Name946: bg(1) conf(3)(less comfortable)
+student1015@umich.edu Name1015: bg(3) conf(2)(less comfortable)
+student598@umich.edu Name598: bg(2) conf(2)(less comfortable)
+student960@umich.edu Name960: bg(2) conf(1)
+
+Group 312: s=47 h=0
+student1153@umich.edu
+student1207@umich.edu
+student1119@umich.edu
+student1104@umich.edu
+
+Group 313: s=47 h=0
+student1228@umich.edu
+student1121@umich.edu
+student1166@umich.edu
+
+Group 314: s=47 h=0
+student930@umich.edu Name930: bg(2) conf(2)(fast pace)
+student949@umich.edu Name949: bg(2) conf(2)
+student942@umich.edu Name942: bg(4) conf(3)(fast pace)
+student165@umich.edu Name165: bg(2) conf(2)
+
+Group 315: s=48 h=100000
+student1221@umich.edu
+student1054@umich.edu
+student12@umich.edu Name12: bg(4) conf(4)
+student39@umich.edu Name39: bg(3) conf(3)
+
+Group 316: s=48 h=10000
+student844@umich.edu Name844: bg(4) conf(3)(fast pace)
+student535@umich.edu Name535: bg(4) conf(4)
+student30@umich.edu Name30: bg(5) conf(5)(fast pace)
+
+Group 317: s=48 h=10000
+student814@umich.edu Name814: bg(1) conf(3)(fast pace)
+student518@umich.edu Name518: bg(1) conf(4)
+student987@umich.edu Name987: bg(3) conf(5)(fast pace)
+
+Group 318: s=48 h=10000
+student292@umich.edu Name292: bg(4) conf(1)(retake)(less comfortable)
+student453@umich.edu Name453: bg(1) conf(1)(retake)(less comfortable)
+student937@umich.edu Name937: bg(3) conf(3)(retake)(fast pace)(less comfortable)
+student736@umich.edu Name736: bg(3) conf(2)(retake)(fast pace)
+
+Group 319: s=48 h=1000
+student447@umich.edu Name447: bg(3) conf(3)(retake)
+student519@umich.edu Name519: bg(5) conf(5)(retake)(fast pace)
+student477@umich.edu Name477: bg(3) conf(3)(retake)(fast pace)(less comfortable)
+student1011@umich.edu Name1011: bg(2) conf(3)(retake)(less comfortable)
+
+Group 320: s=48 h=0
+student1148@umich.edu
+student1107@umich.edu
+student1086@umich.edu
+student1226@umich.edu
+
+Group 321: s=48 h=0
+student985@umich.edu Name985: bg(2) conf(2)
+student156@umich.edu Name156: bg(1) conf(2)
+student501@umich.edu Name501: bg(1) conf(1)
+student25@umich.edu Name25: bg(3) conf(3)
+
+Group 322: s=48 h=0
+student893@umich.edu Name893: bg(1) conf(2)
+student880@umich.edu Name880: bg(1) conf(3)
+student403@umich.edu Name403: bg(3) conf(3)(fast pace)
+student293@umich.edu Name293: bg(1) conf(2)(fast pace)
+
+Group 323: s=48 h=0
+student90@umich.edu Name90: bg(4) conf(4)
+student716@umich.edu Name716: bg(4) conf(4)(fast pace)
+student417@umich.edu Name417: bg(5) conf(4)(fast pace)
+student277@umich.edu Name277: bg(4) conf(4)
+
+Group 324: s=49 h=1010000
+student703@umich.edu Name703: bg(3) conf(3)(fast pace)
+student57@umich.edu Name57: bg(1) conf(3)
+student508@umich.edu Name508: bg(2) conf(3)(retake)(fast pace)
+
+Group 325: s=49 h=10000
+student529@umich.edu Name529: bg(4) conf(3)(fast pace)(less comfortable)
+student491@umich.edu Name491: bg(3) conf(3)
+student693@umich.edu Name693: bg(2) conf(3)(fast pace)(less comfortable)
+
+Group 326: s=49 h=0
+student1060@umich.edu
+student1204@umich.edu
+student1232@umich.edu
+student1061@umich.edu
+
+Group 327: s=49 h=0
+student446@umich.edu Name446: bg(5) conf(4)(fast pace)
+student838@umich.edu Name838: bg(5) conf(4)(fast pace)
+student367@umich.edu Name367: bg(5) conf(4)(fast pace)
+student108@umich.edu Name108: bg(4) conf(3)(fast pace)
+
+Group 328: s=49 h=0
+student805@umich.edu Name805: bg(3) conf(3)(retake)(fast pace)
+student241@umich.edu Name241: bg(2) conf(2)(retake)(fast pace)
+student1006@umich.edu Name1006: bg(2) conf(4)(retake)
+student255@umich.edu Name255: bg(1) conf(2)(retake)
+
+Group 329: s=49 h=0
+student1216@umich.edu
+student1152@umich.edu
+student1111@umich.edu
+
+Group 330: s=49 h=0
+student973@umich.edu Name973: bg(4) conf(3)
+student347@umich.edu Name347: bg(4) conf(5)(fast pace)
+student945@umich.edu Name945: bg(4) conf(3)(fast pace)
+student350@umich.edu Name350: bg(4) conf(3)(fast pace)
+
+Group 331: s=49 h=0
+student609@umich.edu Name609: bg(1) conf(3)
+student628@umich.edu Name628: bg(3) conf(2)
+student441@umich.edu Name441: bg(2) conf(2)(less comfortable)
+student167@umich.edu Name167: bg(1) conf(2)(less comfortable)
+
+Group 332: s=49 h=0
+student315@umich.edu Name315: bg(3) conf(3)(retake)(fast pace)(less comfortable)
+student425@umich.edu Name425: bg(2) conf(3)(retake)(fast pace)
+student1007@umich.edu Name1007: bg(3) conf(4)(retake)
+student705@umich.edu Name705: bg(5) conf(3)(retake)(fast pace)(less comfortable)
+
