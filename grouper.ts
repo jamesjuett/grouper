@@ -13,84 +13,6 @@ function assert(condition: any, message: string = "") : asserts condition {
   }
 };
 
-
-const N_OPT_1 = 100; // Set to 10000 for a full run
-const N_OPT_2 = 10; // Set to 1000 for a full run
-const N_RESTARTS = 100;
-
-// survey qualities
-enum Qualities {
-  pref_less_comfortable = "pref_less_comfortable",
-  pref_fast_pace = "pref_fast_pace",
-  pref_retake = "pref_retake",
-  pref_plus_12 = "pref_plus_12",
-}
-
-type SurveyRowData = {
-  readonly email: string;
-  readonly preferred_name: string;
-  readonly previous_experience: string;
-  readonly confidence: string;
-} & {
-  [k in Qualities]: string
-};
-
-const GROUP_SIZE = 4;
-
-// interface StudentBase {
-//   readonly uniqname: string;
-//   readonly email: string;
-//   readonly section: number;
-//   readonly fullName: string;
-//   readonly didSurvey: boolean;
-// }
-
-// interface NonSurveyStudent extends StudentBase {
-//   readonly didSurvey: false;
-//   readonly preferredName?: undefined;
-//   readonly background?: undefined;
-//   readonly confidence?: undefined;
-//   readonly qualities?: undefined;
-// }
-
-// interface SurveyStudent extends StudentBase {
-//   readonly didSurvey: true;
-//   readonly preferredName: string;
-//   readonly background: 1 | 2 | 3 | 4 | 5;
-//   readonly confidence: 1 | 2 | 3 | 4 | 5;
-//   readonly qualities: {
-//     [k in Qualities]: boolean;
-//   };
-// }
-
-// export type Student = NonSurveyStudent | SurveyStudent;
-
-
-// export function allDidSurvey<Specs extends Record<string, InfoSpec>, Source extends string>(students: readonly Student<Specs>[], source: Source): students is readonly ({Source: Info<Specs[Source]>})[] {
-//   return students.every(s => s.didSurvey);
-// }
-
-// export function noneDidSurvey(students: readonly Student[]): students is readonly SurveyStudent[] {
-//   return students.every(s => !s.didSurvey);
-// }
-
-export function hasInfo<Specs extends Record<string, InfoSpec>, Source extends keyof Specs>(student: Student<Specs>, source: Source): student is Student<Specs, Source> {
-  return <any>student[source] !== undefined;
-}
-
-export function allHaveInfo<Specs extends Record<string, InfoSpec>, Source extends keyof Specs>(group: Group<Specs>, source: Source): group is Group<Specs, Source> {
-  return group.students.every(s => hasInfo(s, source));
-}
-
-export function someHaveInfo<Specs extends Record<string, InfoSpec>, Source extends keyof Specs>(group: Group<Specs>, source: Source): boolean {
-  return group.students.some(s => hasInfo(s, source));
-}
-
-export function withInfo<Specs extends Record<string, InfoSpec>, Source extends keyof Specs>(students: readonly Student<Specs>[], source: Source): Student<Specs, Source>[] {
-  return <Student<Specs, Source>[]>students.filter(s => hasInfo(s, source));
-}
-
-
 type InfoKind = {
   kind: "id" | "section" | "number" | "string" | "boolean" | "bool" | readonly (number | string)[],
   transform?: (val: string) => string
@@ -111,30 +33,6 @@ type Info<Spec extends InfoSpec> = {
   [K in keyof Spec]: InfoValue<Spec[K]>;
 };
 
-
-export class Test<Specs extends Record<string, InfoSpec>> {
-
-
-  public readonly data!: {
-    [K in keyof Specs]: Info<Specs[K]>;
-  };
-
-  public constructor(specs: Specs) {
-    
-  }
-
-};
-
-const SPECS = {
-  survey: {
-    confidence: [1,2,3,4,5],
-    "long name": "string",
-  },
-  roster: {
-    bleh: "number"
-  }
-} as const;
-
 export type Student<Specs extends Record<string, InfoSpec>, Confirmed extends keyof Specs = never> =
   & {
     id: string;
@@ -152,13 +50,22 @@ export type Group<Specs extends Record<string, InfoSpec>, Confirmed extends keyo
   students: readonly Student<Specs, Confirmed>[];
 }
 
-type GrouperOptions<Specs extends Record<string, InfoSpec>> = {
-  specs: Specs,
-  objective: (g: Group<Specs>) => number,
-  describe_student?: (s: Student<Specs>) => string,
-  describe_group?: (g: Group<Specs>) => string,
-  seed?: string;
-};
+export function hasInfo<Specs extends Record<string, InfoSpec>, Source extends keyof Specs>(student: Student<Specs>, source: Source): student is Student<Specs, Source> {
+  return <any>student[source] !== undefined;
+}
+
+export function allHaveInfo<Specs extends Record<string, InfoSpec>, Source extends keyof Specs>(group: Group<Specs>, source: Source): group is Group<Specs, Source> {
+  return group.students.every(s => hasInfo(s, source));
+}
+
+export function someHaveInfo<Specs extends Record<string, InfoSpec>, Source extends keyof Specs>(group: Group<Specs>, source: Source): boolean {
+  return group.students.some(s => hasInfo(s, source));
+}
+
+export function withInfo<Specs extends Record<string, InfoSpec>, Source extends keyof Specs>(students: readonly Student<Specs>[], source: Source): Student<Specs, Source>[] {
+  return <Student<Specs, Source>[]>students.filter(s => hasInfo(s, source));
+}
+
 
 function parseValue(source: string, property: string, kind: InfoKind, raw: string | undefined) {
   assert(raw !== undefined, `Missing value for ${source}.${property}`);
@@ -191,6 +98,38 @@ function parseValue(source: string, property: string, kind: InfoKind, raw: strin
   }
 }
 
+type OutputFiles = {
+  assignments?: string;
+  groups?: string;
+  group_info?: string;
+  sections?: string;
+};
+
+type AlgorithmConfig = {
+  n_opt_1: number,
+  n_opt_2: number,
+  n_restarts: number,
+  group_size: number,
+};
+
+type GrouperOptions<Specs extends Record<string, InfoSpec>> = {
+  specs: Specs,
+  data: { [k in keyof Specs]: string }
+  output: OutputFiles,
+  objective: (g: Group<Specs>) => number,
+  describe_student?: (s: Student<Specs>) => string,
+  describe_group?: (g: Group<Specs>) => string,
+  seed?: string;
+  algorithm?: Partial<AlgorithmConfig>
+};
+
+const DEFAULT_ALGORITHM = {
+  n_opt_1: 100, // set to 10000 for full run
+  n_opt_2: 10, // set to 1000 for full run
+  n_restarts: 100,
+  group_size : 4,
+};
+
 export class Grouper<Specs extends Record<string, InfoSpec>> {
 
   private static DEFAULT_DESCRIBE_STUDENT<Specs extends Record<string, InfoSpec>>(s: Student<Specs>) {
@@ -210,22 +149,27 @@ export class Grouper<Specs extends Record<string, InfoSpec>> {
   }
 
   public readonly specs: Specs;
+  public readonly data: { [k in keyof Specs]: string };
+  public readonly output: OutputFiles;
   public readonly objective: (g: Group<Specs>) => number;
+  private readonly algorithm: AlgorithmConfig;
   private readonly describe_student: (s: Student<Specs>) => string;
   private readonly describe_group: (s: Group<Specs>) => string;
 
   public students: Student<Specs>[] = [];
   public readonly students_map: {[index:string]: Student<Specs> | undefined} = {};
   private readonly section_names: string[] = [];
-  private readonly _sections: Group<Specs>[][] = [];
-  public readonly sections: readonly (readonly Group<Specs>[])[] = this._sections;
+  public readonly sections: readonly (readonly Group<Specs>[])[] = [];
 
   private readonly rng: SeededRandomizer;
 
   public constructor(options: GrouperOptions<Specs>) {
     this.specs = options.specs;
+    this.data = options.data;
+    this.output = options.output;
     Object.entries(this.specs).forEach(([source, props]) => assert(Object.values(props).some(kind => kind.kind === "id"), `Missing id in ${source}`));
     this.objective = options.objective;
+    this.algorithm = { ...DEFAULT_ALGORITHM, ...options.algorithm };
     this.describe_student = options.describe_student ?? Grouper.DEFAULT_DESCRIBE_STUDENT;
     this.describe_group = options.describe_group ?? Grouper.DEFAULT_DESCRIBE_GROUP;
     this.rng = new SeededRandomizer(options.seed ?? ""+Date.now());
@@ -242,15 +186,15 @@ export class Grouper<Specs extends Record<string, InfoSpec>> {
     // last group size = N % X ..... we want to get this to N - 1
     // so we need to steal 1 student from (X - 1) - (N % X) other groups
     // Then we will have (X - 1) - (N % X) + 1 = X - N % X groups of N-1
-    // Extra % GROUP_SIZE at the end handles case where there's 0
-    let gNm1 = (GROUP_SIZE - (students.length % GROUP_SIZE)) % GROUP_SIZE;
+    // Extra % this.algorithm.group_size at the end handles case where there's 0
+    let gNm1 = (this.algorithm.group_size - (students.length % this.algorithm.group_size)) % this.algorithm.group_size;
   
     if (gNm1 === 0) {
       // If there are e.g. no groups of N-1, allow a random chance that we
-      // instead form GROUP_SIZE of them. This helps allow different group
+      // instead form this.algorithm.group_size of them. This helps allow different group
       // sizes on each random restart.
       if (this.rng.float() < 0.5) {
-        gNm1 = GROUP_SIZE;
+        gNm1 = this.algorithm.group_size;
       }
     }
   
@@ -258,7 +202,7 @@ export class Grouper<Specs extends Record<string, InfoSpec>> {
     let i = 0; 
     while (i < students.length) {
       let group: Student<Specs>[] = [];
-      let size = gNm1-- > 0 ? GROUP_SIZE-1 : GROUP_SIZE;
+      let size = gNm1-- > 0 ? this.algorithm.group_size-1 : this.algorithm.group_size;
       for (let j = 0; j < size && i < students.length; ++j) {
         group.push(students[i++]);
       }
@@ -289,7 +233,7 @@ export class Grouper<Specs extends Record<string, InfoSpec>> {
   }
   
   private optimize(groups: Group<Specs>[]) {
-    for (let i = 0; i < N_OPT_1; ++i) {
+    for (let i = 0; i < this.algorithm.n_opt_1; ++i) {
   
       // pick two random groups
       let i1 = this.rng.range(groups.length);
@@ -365,7 +309,7 @@ export class Grouper<Specs extends Record<string, InfoSpec>> {
   private createOptimalGroups(students: Student<Specs>[]) {
     let groups = this.createRandomGroups(students);
     this.optimize(groups);
-    for (let i = 0; i < N_OPT_2; ++i) {
+    for (let i = 0; i < this.algorithm.n_opt_2; ++i) {
       this.optimize2(groups);
     }
     return groups;
@@ -373,7 +317,7 @@ export class Grouper<Specs extends Record<string, InfoSpec>> {
 
   public createGroups() {
     for (let source in this.specs) {
-      let data = parse<Partial<Record<string,string>>>(readFileSync(`data/${source}.csv`, "utf8"), {
+      let data = parse<Partial<Record<string,string>>>(readFileSync(this.data[source], "utf8"), {
         header: true,
         skipEmptyLines: true
       }).data;
@@ -418,7 +362,7 @@ export class Grouper<Specs extends Record<string, InfoSpec>> {
     this.students = <Student<Specs>[]>Object.values(this.students_map);
 
     this.section_names.sort((a,b) => a.localeCompare(b));
-    let sections = [...this.section_names, undefined].map((sectionNum) => {
+    asMutable(this).sections = [...this.section_names, undefined].map((sectionNum) => {
       console.log(`Forming groups for section ${sectionNum}...`)
       let students = this.students.filter(s => s.section === sectionNum);
 
@@ -427,9 +371,9 @@ export class Grouper<Specs extends Record<string, InfoSpec>> {
         return [];
       }
 
-      let bestH = 10000000000;
+      let bestH = Infinity;
       let bestGroups: Group<Specs>[] = [];
-      for(let i = 0; i < N_RESTARTS; ++i) { // 100 random restarts
+      for(let i = 0; i < this.algorithm.n_restarts; ++i) {
         let groups = this.createOptimalGroups(students);
         let h = groups.reduce((prev, g) => prev + this.objective(g), 0);
         if (h < bestH) {
@@ -437,10 +381,10 @@ export class Grouper<Specs extends Record<string, InfoSpec>> {
           bestGroups = groups;
         }
       }
-      return bestGroups;
+      return bestGroups.sort((a, b) => this.objective(b) - this.objective(a));
     });
 
-    let groups = sections.flat();
+    let groups = this.sections.flat();
     
     // sort in ascending order (remember lower objective is better)
     // groups.sort((a, b) => this.objective(a) - this.objective(b));
@@ -452,7 +396,7 @@ export class Grouper<Specs extends Record<string, InfoSpec>> {
       output += "\n";
     });
 
-    writeFileSync("out/group_info.txt", output);
+    this.output.group_info && writeFileSync(this.output.group_info, output);
 
     output = "";
     output += "group,section,score,emails,name1,name2,name3,name4,timeslot\n"
@@ -467,23 +411,23 @@ export class Grouper<Specs extends Record<string, InfoSpec>> {
       output += "\n";
     });
 
-    writeFileSync("out/groups.txt", output);
+    this.output.groups && writeFileSync(this.output.groups, output);
 
     output = "";
-    output += "section,group,uniqname,name\n"
-    sections.forEach(groups => {
+    output += "section,group,id,name\n"
+    this.sections.forEach(groups => {
       groups.forEach((g: Group<Specs>, i: number) => {
         g.students.forEach(s => {
-          output += `${s.section},${i+1},${s.uniqname},${s.preferredName || s.fullName || s.uniqname}\n`; 
+          output += `${s.section},${i+1},${s.id},${s.preferredName || s.fullName || s.id}\n`; 
         });
-        for(let j = 0; j < GROUP_SIZE - g.students.length; ++j) {
+        for(let j = 0; j < this.algorithm.group_size - g.students.length; ++j) {
           output += "\n";
         }
       });
     });
 
-    writeFileSync("out/sections.csv", output);
-    writeFileSync("out/assignments.json", JSON.stringify(sections, null, 2));
+    this.output.sections && writeFileSync(this.output.sections, output);
+    this.output.assignments && writeFileSync(this.output.assignments, JSON.stringify(this.sections, null, 2));
 
   }
 };

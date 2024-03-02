@@ -213,6 +213,82 @@
     {
       "students": [
         {
+          "id": "student294@umich.edu",
+          "section": "11",
+          "survey": {
+            "email": "student294@umich.edu",
+            "preferred_name": "Name294",
+            "previous_experience": 2,
+            "confidence": 3,
+            "pref_less_comfortable": true,
+            "pref_fast_pace": false,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student294@umich.edu",
+            "section": "11"
+          }
+        },
+        {
+          "id": "student648@umich.edu",
+          "section": "11",
+          "survey": {
+            "email": "student648@umich.edu",
+            "preferred_name": "Name648",
+            "previous_experience": 1,
+            "confidence": 2,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student648@umich.edu",
+            "section": "11"
+          }
+        },
+        {
+          "id": "student516@umich.edu",
+          "section": "11",
+          "survey": {
+            "email": "student516@umich.edu",
+            "preferred_name": "Name516",
+            "previous_experience": 3,
+            "confidence": 3,
+            "pref_less_comfortable": true,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student516@umich.edu",
+            "section": "11"
+          }
+        },
+        {
+          "id": "student555@umich.edu",
+          "section": "11",
+          "survey": {
+            "email": "student555@umich.edu",
+            "preferred_name": "Name555",
+            "previous_experience": 1,
+            "confidence": 2,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student555@umich.edu",
+            "section": "11"
+          }
+        }
+      ]
+    },
+    {
+      "students": [
+        {
           "id": "student749@umich.edu",
           "section": "11",
           "survey": {
@@ -433,82 +509,6 @@
           },
           "roster": {
             "uniqname": "student676@umich.edu",
-            "section": "11"
-          }
-        }
-      ]
-    },
-    {
-      "students": [
-        {
-          "id": "student294@umich.edu",
-          "section": "11",
-          "survey": {
-            "email": "student294@umich.edu",
-            "preferred_name": "Name294",
-            "previous_experience": 2,
-            "confidence": 3,
-            "pref_less_comfortable": true,
-            "pref_fast_pace": false,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student294@umich.edu",
-            "section": "11"
-          }
-        },
-        {
-          "id": "student648@umich.edu",
-          "section": "11",
-          "survey": {
-            "email": "student648@umich.edu",
-            "preferred_name": "Name648",
-            "previous_experience": 1,
-            "confidence": 2,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student648@umich.edu",
-            "section": "11"
-          }
-        },
-        {
-          "id": "student516@umich.edu",
-          "section": "11",
-          "survey": {
-            "email": "student516@umich.edu",
-            "preferred_name": "Name516",
-            "previous_experience": 3,
-            "confidence": 3,
-            "pref_less_comfortable": true,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student516@umich.edu",
-            "section": "11"
-          }
-        },
-        {
-          "id": "student555@umich.edu",
-          "section": "11",
-          "survey": {
-            "email": "student555@umich.edu",
-            "preferred_name": "Name555",
-            "previous_experience": 1,
-            "confidence": 2,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student555@umich.edu",
             "section": "11"
           }
         }
@@ -1305,82 +1305,6 @@
     {
       "students": [
         {
-          "id": "student499@umich.edu",
-          "section": "13",
-          "survey": {
-            "email": "student499@umich.edu",
-            "preferred_name": "Name499",
-            "previous_experience": 3,
-            "confidence": 4,
-            "pref_less_comfortable": true,
-            "pref_fast_pace": false,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student499@umich.edu",
-            "section": "13"
-          }
-        },
-        {
-          "id": "student583@umich.edu",
-          "section": "13",
-          "survey": {
-            "email": "student583@umich.edu",
-            "preferred_name": "Name583",
-            "previous_experience": 4,
-            "confidence": 4,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": false,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student583@umich.edu",
-            "section": "13"
-          }
-        },
-        {
-          "id": "student825@umich.edu",
-          "section": "13",
-          "survey": {
-            "email": "student825@umich.edu",
-            "preferred_name": "Name825",
-            "previous_experience": 2,
-            "confidence": 4,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student825@umich.edu",
-            "section": "13"
-          }
-        },
-        {
-          "id": "student963@umich.edu",
-          "section": "13",
-          "survey": {
-            "email": "student963@umich.edu",
-            "preferred_name": "Name963",
-            "previous_experience": 4,
-            "confidence": 4,
-            "pref_less_comfortable": true,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student963@umich.edu",
-            "section": "13"
-          }
-        }
-      ]
-    },
-    {
-      "students": [
-        {
           "id": "student517@umich.edu",
           "section": "13",
           "survey": {
@@ -1601,6 +1525,82 @@
           },
           "roster": {
             "uniqname": "student239@umich.edu",
+            "section": "13"
+          }
+        }
+      ]
+    },
+    {
+      "students": [
+        {
+          "id": "student499@umich.edu",
+          "section": "13",
+          "survey": {
+            "email": "student499@umich.edu",
+            "preferred_name": "Name499",
+            "previous_experience": 3,
+            "confidence": 4,
+            "pref_less_comfortable": true,
+            "pref_fast_pace": false,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student499@umich.edu",
+            "section": "13"
+          }
+        },
+        {
+          "id": "student583@umich.edu",
+          "section": "13",
+          "survey": {
+            "email": "student583@umich.edu",
+            "preferred_name": "Name583",
+            "previous_experience": 4,
+            "confidence": 4,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": false,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student583@umich.edu",
+            "section": "13"
+          }
+        },
+        {
+          "id": "student825@umich.edu",
+          "section": "13",
+          "survey": {
+            "email": "student825@umich.edu",
+            "preferred_name": "Name825",
+            "previous_experience": 2,
+            "confidence": 4,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student825@umich.edu",
+            "section": "13"
+          }
+        },
+        {
+          "id": "student963@umich.edu",
+          "section": "13",
+          "survey": {
+            "email": "student963@umich.edu",
+            "preferred_name": "Name963",
+            "previous_experience": 4,
+            "confidence": 4,
+            "pref_less_comfortable": true,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student963@umich.edu",
             "section": "13"
           }
         }
@@ -3723,65 +3723,11 @@
     {
       "students": [
         {
-          "id": "student677@umich.edu",
+          "id": "student303@umich.edu",
           "section": "17",
           "survey": {
-            "email": "student677@umich.edu",
-            "preferred_name": "Name677",
-            "previous_experience": 1,
-            "confidence": 3,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": false,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student677@umich.edu",
-            "section": "17"
-          }
-        },
-        {
-          "id": "student482@umich.edu",
-          "section": "17",
-          "survey": {
-            "email": "student482@umich.edu",
-            "preferred_name": "Name482",
-            "previous_experience": 1,
-            "confidence": 4,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student482@umich.edu",
-            "section": "17"
-          }
-        },
-        {
-          "id": "student398@umich.edu",
-          "section": "17",
-          "survey": {
-            "email": "student398@umich.edu",
-            "preferred_name": "Name398",
-            "previous_experience": 1,
-            "confidence": 4,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": false,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student398@umich.edu",
-            "section": "17"
-          }
-        },
-        {
-          "id": "student798@umich.edu",
-          "section": "17",
-          "survey": {
-            "email": "student798@umich.edu",
-            "preferred_name": "Name798",
+            "email": "student303@umich.edu",
+            "preferred_name": "Name303",
             "previous_experience": 3,
             "confidence": 4,
             "pref_less_comfortable": false,
@@ -3790,7 +3736,43 @@
             "pref_plus_12": false
           },
           "roster": {
-            "uniqname": "student798@umich.edu",
+            "uniqname": "student303@umich.edu",
+            "section": "17"
+          }
+        },
+        {
+          "id": "student430@umich.edu",
+          "section": "17",
+          "survey": {
+            "email": "student430@umich.edu",
+            "preferred_name": "Name430",
+            "previous_experience": 1,
+            "confidence": 3,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student430@umich.edu",
+            "section": "17"
+          }
+        },
+        {
+          "id": "student514@umich.edu",
+          "section": "17",
+          "survey": {
+            "email": "student514@umich.edu",
+            "preferred_name": "Name514",
+            "previous_experience": 1,
+            "confidence": 5,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": true,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student514@umich.edu",
             "section": "17"
           }
         }
@@ -3849,64 +3831,6 @@
           },
           "roster": {
             "uniqname": "student55@umich.edu",
-            "section": "17"
-          }
-        }
-      ]
-    },
-    {
-      "students": [
-        {
-          "id": "student303@umich.edu",
-          "section": "17",
-          "survey": {
-            "email": "student303@umich.edu",
-            "preferred_name": "Name303",
-            "previous_experience": 3,
-            "confidence": 4,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student303@umich.edu",
-            "section": "17"
-          }
-        },
-        {
-          "id": "student430@umich.edu",
-          "section": "17",
-          "survey": {
-            "email": "student430@umich.edu",
-            "preferred_name": "Name430",
-            "previous_experience": 1,
-            "confidence": 3,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student430@umich.edu",
-            "section": "17"
-          }
-        },
-        {
-          "id": "student514@umich.edu",
-          "section": "17",
-          "survey": {
-            "email": "student514@umich.edu",
-            "preferred_name": "Name514",
-            "previous_experience": 1,
-            "confidence": 5,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": true,
-            "pref_retake": true,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student514@umich.edu",
             "section": "17"
           }
         }
@@ -3983,6 +3907,82 @@
           },
           "roster": {
             "uniqname": "student720@umich.edu",
+            "section": "17"
+          }
+        }
+      ]
+    },
+    {
+      "students": [
+        {
+          "id": "student677@umich.edu",
+          "section": "17",
+          "survey": {
+            "email": "student677@umich.edu",
+            "preferred_name": "Name677",
+            "previous_experience": 1,
+            "confidence": 3,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": false,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student677@umich.edu",
+            "section": "17"
+          }
+        },
+        {
+          "id": "student482@umich.edu",
+          "section": "17",
+          "survey": {
+            "email": "student482@umich.edu",
+            "preferred_name": "Name482",
+            "previous_experience": 1,
+            "confidence": 4,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student482@umich.edu",
+            "section": "17"
+          }
+        },
+        {
+          "id": "student398@umich.edu",
+          "section": "17",
+          "survey": {
+            "email": "student398@umich.edu",
+            "preferred_name": "Name398",
+            "previous_experience": 1,
+            "confidence": 4,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": false,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student398@umich.edu",
+            "section": "17"
+          }
+        },
+        {
+          "id": "student798@umich.edu",
+          "section": "17",
+          "survey": {
+            "email": "student798@umich.edu",
+            "preferred_name": "Name798",
+            "previous_experience": 3,
+            "confidence": 4,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student798@umich.edu",
             "section": "17"
           }
         }
@@ -5189,6 +5189,82 @@
     {
       "students": [
         {
+          "id": "student929@umich.edu",
+          "section": "19",
+          "survey": {
+            "email": "student929@umich.edu",
+            "preferred_name": "Name929",
+            "previous_experience": 3,
+            "confidence": 3,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": false,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student929@umich.edu",
+            "section": "19"
+          }
+        },
+        {
+          "id": "student668@umich.edu",
+          "section": "19",
+          "survey": {
+            "email": "student668@umich.edu",
+            "preferred_name": "Name668",
+            "previous_experience": 3,
+            "confidence": 3,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": false,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student668@umich.edu",
+            "section": "19"
+          }
+        },
+        {
+          "id": "student66@umich.edu",
+          "section": "19",
+          "survey": {
+            "email": "student66@umich.edu",
+            "preferred_name": "Name66",
+            "previous_experience": 2,
+            "confidence": 2,
+            "pref_less_comfortable": true,
+            "pref_fast_pace": false,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student66@umich.edu",
+            "section": "19"
+          }
+        },
+        {
+          "id": "student744@umich.edu",
+          "section": "19",
+          "survey": {
+            "email": "student744@umich.edu",
+            "preferred_name": "Name744",
+            "previous_experience": 1,
+            "confidence": 2,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": false,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student744@umich.edu",
+            "section": "19"
+          }
+        }
+      ]
+    },
+    {
+      "students": [
+        {
           "id": "student15@umich.edu",
           "section": "19",
           "survey": {
@@ -5341,82 +5417,6 @@
     {
       "students": [
         {
-          "id": "student929@umich.edu",
-          "section": "19",
-          "survey": {
-            "email": "student929@umich.edu",
-            "preferred_name": "Name929",
-            "previous_experience": 3,
-            "confidence": 3,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": false,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student929@umich.edu",
-            "section": "19"
-          }
-        },
-        {
-          "id": "student668@umich.edu",
-          "section": "19",
-          "survey": {
-            "email": "student668@umich.edu",
-            "preferred_name": "Name668",
-            "previous_experience": 3,
-            "confidence": 3,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": false,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student668@umich.edu",
-            "section": "19"
-          }
-        },
-        {
-          "id": "student66@umich.edu",
-          "section": "19",
-          "survey": {
-            "email": "student66@umich.edu",
-            "preferred_name": "Name66",
-            "previous_experience": 2,
-            "confidence": 2,
-            "pref_less_comfortable": true,
-            "pref_fast_pace": false,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student66@umich.edu",
-            "section": "19"
-          }
-        },
-        {
-          "id": "student744@umich.edu",
-          "section": "19",
-          "survey": {
-            "email": "student744@umich.edu",
-            "preferred_name": "Name744",
-            "previous_experience": 1,
-            "confidence": 2,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": false,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student744@umich.edu",
-            "section": "19"
-          }
-        }
-      ]
-    },
-    {
-      "students": [
-        {
           "id": "student280@umich.edu",
           "section": "19",
           "survey": {
@@ -5523,74 +5523,46 @@
     {
       "students": [
         {
-          "id": "student162@umich.edu",
+          "id": "student476@umich.edu",
           "section": "20",
           "survey": {
-            "email": "student162@umich.edu",
-            "preferred_name": "Name162",
-            "previous_experience": 4,
-            "confidence": 3,
-            "pref_less_comfortable": true,
-            "pref_fast_pace": false,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student162@umich.edu",
-            "section": "20"
-          }
-        },
-        {
-          "id": "student113@umich.edu",
-          "section": "20",
-          "survey": {
-            "email": "student113@umich.edu",
-            "preferred_name": "Name113",
-            "previous_experience": 4,
-            "confidence": 3,
-            "pref_less_comfortable": true,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student113@umich.edu",
-            "section": "20"
-          }
-        },
-        {
-          "id": "student63@umich.edu",
-          "section": "20",
-          "survey": {
-            "email": "student63@umich.edu",
-            "preferred_name": "Name63",
+            "email": "student476@umich.edu",
+            "preferred_name": "Name476",
             "previous_experience": 3,
-            "confidence": 3,
-            "pref_less_comfortable": true,
+            "confidence": 4,
+            "pref_less_comfortable": false,
             "pref_fast_pace": false,
             "pref_retake": false,
             "pref_plus_12": false
           },
           "roster": {
-            "uniqname": "student63@umich.edu",
+            "uniqname": "student476@umich.edu",
             "section": "20"
           }
         },
         {
-          "id": "student573@umich.edu",
+          "id": "student1208@umich.edu",
+          "section": "20",
+          "roster": {
+            "uniqname": "student1208@umich.edu",
+            "section": "20"
+          }
+        },
+        {
+          "id": "student637@umich.edu",
           "section": "20",
           "survey": {
-            "email": "student573@umich.edu",
-            "preferred_name": "Name573",
-            "previous_experience": 4,
+            "email": "student637@umich.edu",
+            "preferred_name": "Name637",
+            "previous_experience": 2,
             "confidence": 3,
             "pref_less_comfortable": false,
-            "pref_fast_pace": true,
+            "pref_fast_pace": false,
             "pref_retake": false,
             "pref_plus_12": false
           },
           "roster": {
-            "uniqname": "student573@umich.edu",
+            "uniqname": "student637@umich.edu",
             "section": "20"
           }
         }
@@ -5649,54 +5621,6 @@
           },
           "roster": {
             "uniqname": "student1030@umich.edu",
-            "section": "20"
-          }
-        }
-      ]
-    },
-    {
-      "students": [
-        {
-          "id": "student476@umich.edu",
-          "section": "20",
-          "survey": {
-            "email": "student476@umich.edu",
-            "preferred_name": "Name476",
-            "previous_experience": 3,
-            "confidence": 4,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": false,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student476@umich.edu",
-            "section": "20"
-          }
-        },
-        {
-          "id": "student1208@umich.edu",
-          "section": "20",
-          "roster": {
-            "uniqname": "student1208@umich.edu",
-            "section": "20"
-          }
-        },
-        {
-          "id": "student637@umich.edu",
-          "section": "20",
-          "survey": {
-            "email": "student637@umich.edu",
-            "preferred_name": "Name637",
-            "previous_experience": 2,
-            "confidence": 3,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": false,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student637@umich.edu",
             "section": "20"
           }
         }
@@ -5773,6 +5697,82 @@
           },
           "roster": {
             "uniqname": "student61@umich.edu",
+            "section": "20"
+          }
+        }
+      ]
+    },
+    {
+      "students": [
+        {
+          "id": "student162@umich.edu",
+          "section": "20",
+          "survey": {
+            "email": "student162@umich.edu",
+            "preferred_name": "Name162",
+            "previous_experience": 4,
+            "confidence": 3,
+            "pref_less_comfortable": true,
+            "pref_fast_pace": false,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student162@umich.edu",
+            "section": "20"
+          }
+        },
+        {
+          "id": "student113@umich.edu",
+          "section": "20",
+          "survey": {
+            "email": "student113@umich.edu",
+            "preferred_name": "Name113",
+            "previous_experience": 4,
+            "confidence": 3,
+            "pref_less_comfortable": true,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student113@umich.edu",
+            "section": "20"
+          }
+        },
+        {
+          "id": "student63@umich.edu",
+          "section": "20",
+          "survey": {
+            "email": "student63@umich.edu",
+            "preferred_name": "Name63",
+            "previous_experience": 3,
+            "confidence": 3,
+            "pref_less_comfortable": true,
+            "pref_fast_pace": false,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student63@umich.edu",
+            "section": "20"
+          }
+        },
+        {
+          "id": "student573@umich.edu",
+          "section": "20",
+          "survey": {
+            "email": "student573@umich.edu",
+            "preferred_name": "Name573",
+            "previous_experience": 4,
+            "confidence": 3,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student573@umich.edu",
             "section": "20"
           }
         }
@@ -7461,6 +7461,62 @@
     {
       "students": [
         {
+          "id": "student103@umich.edu",
+          "section": "25",
+          "survey": {
+            "email": "student103@umich.edu",
+            "preferred_name": "Name103",
+            "previous_experience": 4,
+            "confidence": 3,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student103@umich.edu",
+            "section": "25"
+          }
+        },
+        {
+          "id": "student1088@umich.edu",
+          "section": "25",
+          "roster": {
+            "uniqname": "student1088@umich.edu",
+            "section": "25"
+          }
+        },
+        {
+          "id": "student377@umich.edu",
+          "section": "25",
+          "survey": {
+            "email": "student377@umich.edu",
+            "preferred_name": "Name377",
+            "previous_experience": 4,
+            "confidence": 3,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": true,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student377@umich.edu",
+            "section": "25"
+          }
+        },
+        {
+          "id": "student1142@umich.edu",
+          "section": "25",
+          "roster": {
+            "uniqname": "student1142@umich.edu",
+            "section": "25"
+          }
+        }
+      ]
+    },
+    {
+      "students": [
+        {
           "id": "student431@umich.edu",
           "section": "25",
           "survey": {
@@ -7511,62 +7567,6 @@
           },
           "roster": {
             "uniqname": "student339@umich.edu",
-            "section": "25"
-          }
-        }
-      ]
-    },
-    {
-      "students": [
-        {
-          "id": "student103@umich.edu",
-          "section": "25",
-          "survey": {
-            "email": "student103@umich.edu",
-            "preferred_name": "Name103",
-            "previous_experience": 4,
-            "confidence": 3,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student103@umich.edu",
-            "section": "25"
-          }
-        },
-        {
-          "id": "student1088@umich.edu",
-          "section": "25",
-          "roster": {
-            "uniqname": "student1088@umich.edu",
-            "section": "25"
-          }
-        },
-        {
-          "id": "student377@umich.edu",
-          "section": "25",
-          "survey": {
-            "email": "student377@umich.edu",
-            "preferred_name": "Name377",
-            "previous_experience": 4,
-            "confidence": 3,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": true,
-            "pref_retake": true,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student377@umich.edu",
-            "section": "25"
-          }
-        },
-        {
-          "id": "student1142@umich.edu",
-          "section": "25",
-          "roster": {
-            "uniqname": "student1142@umich.edu",
             "section": "25"
           }
         }
@@ -14849,64 +14849,6 @@
     {
       "students": [
         {
-          "id": "student306@umich.edu",
-          "section": "38",
-          "survey": {
-            "email": "student306@umich.edu",
-            "preferred_name": "Name306",
-            "previous_experience": 3,
-            "confidence": 4,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student306@umich.edu",
-            "section": "38"
-          }
-        },
-        {
-          "id": "student704@umich.edu",
-          "section": "38",
-          "survey": {
-            "email": "student704@umich.edu",
-            "preferred_name": "Name704",
-            "previous_experience": 1,
-            "confidence": 3,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": false,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student704@umich.edu",
-            "section": "38"
-          }
-        },
-        {
-          "id": "student18@umich.edu",
-          "section": "38",
-          "survey": {
-            "email": "student18@umich.edu",
-            "preferred_name": "Name18",
-            "previous_experience": 1,
-            "confidence": 3,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student18@umich.edu",
-            "section": "38"
-          }
-        }
-      ]
-    },
-    {
-      "students": [
-        {
           "id": "student961@umich.edu",
           "section": "38",
           "survey": {
@@ -14957,6 +14899,64 @@
           },
           "roster": {
             "uniqname": "student114@umich.edu",
+            "section": "38"
+          }
+        }
+      ]
+    },
+    {
+      "students": [
+        {
+          "id": "student306@umich.edu",
+          "section": "38",
+          "survey": {
+            "email": "student306@umich.edu",
+            "preferred_name": "Name306",
+            "previous_experience": 3,
+            "confidence": 4,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student306@umich.edu",
+            "section": "38"
+          }
+        },
+        {
+          "id": "student704@umich.edu",
+          "section": "38",
+          "survey": {
+            "email": "student704@umich.edu",
+            "preferred_name": "Name704",
+            "previous_experience": 1,
+            "confidence": 3,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": false,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student704@umich.edu",
+            "section": "38"
+          }
+        },
+        {
+          "id": "student18@umich.edu",
+          "section": "38",
+          "survey": {
+            "email": "student18@umich.edu",
+            "preferred_name": "Name18",
+            "previous_experience": 1,
+            "confidence": 3,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student18@umich.edu",
             "section": "38"
           }
         }
@@ -16585,6 +16585,82 @@
     {
       "students": [
         {
+          "id": "student122@umich.edu",
+          "section": "41",
+          "survey": {
+            "email": "student122@umich.edu",
+            "preferred_name": "Name122",
+            "previous_experience": 1,
+            "confidence": 4,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": false,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student122@umich.edu",
+            "section": "41"
+          }
+        },
+        {
+          "id": "student357@umich.edu",
+          "section": "41",
+          "survey": {
+            "email": "student357@umich.edu",
+            "preferred_name": "Name357",
+            "previous_experience": 4,
+            "confidence": 5,
+            "pref_less_comfortable": true,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student357@umich.edu",
+            "section": "41"
+          }
+        },
+        {
+          "id": "student259@umich.edu",
+          "section": "41",
+          "survey": {
+            "email": "student259@umich.edu",
+            "preferred_name": "Name259",
+            "previous_experience": 5,
+            "confidence": 5,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student259@umich.edu",
+            "section": "41"
+          }
+        },
+        {
+          "id": "student6@umich.edu",
+          "section": "41",
+          "survey": {
+            "email": "student6@umich.edu",
+            "preferred_name": "Name6",
+            "previous_experience": 5,
+            "confidence": 4,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student6@umich.edu",
+            "section": "41"
+          }
+        }
+      ]
+    },
+    {
+      "students": [
+        {
           "id": "student874@umich.edu",
           "section": "41",
           "survey": {
@@ -16711,82 +16787,6 @@
           },
           "roster": {
             "uniqname": "student213@umich.edu",
-            "section": "41"
-          }
-        }
-      ]
-    },
-    {
-      "students": [
-        {
-          "id": "student122@umich.edu",
-          "section": "41",
-          "survey": {
-            "email": "student122@umich.edu",
-            "preferred_name": "Name122",
-            "previous_experience": 1,
-            "confidence": 4,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": false,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student122@umich.edu",
-            "section": "41"
-          }
-        },
-        {
-          "id": "student357@umich.edu",
-          "section": "41",
-          "survey": {
-            "email": "student357@umich.edu",
-            "preferred_name": "Name357",
-            "previous_experience": 4,
-            "confidence": 5,
-            "pref_less_comfortable": true,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student357@umich.edu",
-            "section": "41"
-          }
-        },
-        {
-          "id": "student259@umich.edu",
-          "section": "41",
-          "survey": {
-            "email": "student259@umich.edu",
-            "preferred_name": "Name259",
-            "previous_experience": 5,
-            "confidence": 5,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student259@umich.edu",
-            "section": "41"
-          }
-        },
-        {
-          "id": "student6@umich.edu",
-          "section": "41",
-          "survey": {
-            "email": "student6@umich.edu",
-            "preferred_name": "Name6",
-            "previous_experience": 5,
-            "confidence": 4,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student6@umich.edu",
             "section": "41"
           }
         }
@@ -21227,6 +21227,64 @@
     {
       "students": [
         {
+          "id": "student57@umich.edu",
+          "section": "49",
+          "survey": {
+            "email": "student57@umich.edu",
+            "preferred_name": "Name57",
+            "previous_experience": 1,
+            "confidence": 3,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": false,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student57@umich.edu",
+            "section": "49"
+          }
+        },
+        {
+          "id": "student508@umich.edu",
+          "section": "49",
+          "survey": {
+            "email": "student508@umich.edu",
+            "preferred_name": "Name508",
+            "previous_experience": 2,
+            "confidence": 3,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": true,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student508@umich.edu",
+            "section": "49"
+          }
+        },
+        {
+          "id": "student703@umich.edu",
+          "section": "49",
+          "survey": {
+            "email": "student703@umich.edu",
+            "preferred_name": "Name703",
+            "previous_experience": 3,
+            "confidence": 3,
+            "pref_less_comfortable": false,
+            "pref_fast_pace": true,
+            "pref_retake": false,
+            "pref_plus_12": false
+          },
+          "roster": {
+            "uniqname": "student703@umich.edu",
+            "section": "49"
+          }
+        }
+      ]
+    },
+    {
+      "students": [
+        {
           "id": "student693@umich.edu",
           "section": "49",
           "survey": {
@@ -21295,64 +21353,6 @@
           },
           "roster": {
             "uniqname": "student412@umich.edu",
-            "section": "49"
-          }
-        }
-      ]
-    },
-    {
-      "students": [
-        {
-          "id": "student57@umich.edu",
-          "section": "49",
-          "survey": {
-            "email": "student57@umich.edu",
-            "preferred_name": "Name57",
-            "previous_experience": 1,
-            "confidence": 3,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": false,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student57@umich.edu",
-            "section": "49"
-          }
-        },
-        {
-          "id": "student508@umich.edu",
-          "section": "49",
-          "survey": {
-            "email": "student508@umich.edu",
-            "preferred_name": "Name508",
-            "previous_experience": 2,
-            "confidence": 3,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": true,
-            "pref_retake": true,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student508@umich.edu",
-            "section": "49"
-          }
-        },
-        {
-          "id": "student703@umich.edu",
-          "section": "49",
-          "survey": {
-            "email": "student703@umich.edu",
-            "preferred_name": "Name703",
-            "previous_experience": 3,
-            "confidence": 3,
-            "pref_less_comfortable": false,
-            "pref_fast_pace": true,
-            "pref_retake": false,
-            "pref_plus_12": false
-          },
-          "roster": {
-            "uniqname": "student703@umich.edu",
             "section": "49"
           }
         }

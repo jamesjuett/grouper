@@ -114,7 +114,22 @@ function sample_objective(g: Group<typeof SPECS>) {
 
 const grouper = new Grouper({
   specs: SPECS,
+  data: {
+    survey: "test/in/survey.csv",
+    roster: "test/in/roster.csv",
+  },
+  output: {
+    assignments: "test/out/assignments.json",
+    group_info: "test/out/group_info.txt",
+    groups: "test/out/groups.csv",
+    sections: "test/out/sections.csv",
+  },
   objective: sample_objective,
+  algorithm: {
+    n_opt_1: 10000,
+    n_opt_2: 1000,
+    n_restarts: 100,
+  },
   describe_student: (s) => {
     if (!hasInfo(s, "survey")) {
       return s.id;
@@ -130,18 +145,32 @@ grouper.createGroups();
 describe('Sample Groups', function() {
   // this.timeout(10000);
 
-  it('Matches Past Randomization', () => {
-    const expected = readFileSync("test/sample/assignments.json", "utf-8");
+  it('Outputs assignments.json', () => {
+    const expected = readFileSync("test/correct/assignments.json", "utf-8");
     const actual = JSON.stringify(grouper.sections, null, 2);
     const success = actual === expected;
     expect(success).to.be.true;
   });
 
-  // it('Outputs Group Info', () => {
-  //   const expected = readFileSync("test/sample/group_info.txt", "utf-8");
-  //   const actual = JSON.stringify(grouper.sections, null, 2);
-  //   const success = actual === expected;
-  //   expect(success).to.be.true;
-  // });
+  it('Outputs group_info.txt', () => {
+    const expected = readFileSync("test/correct/group_info.txt", "utf-8");
+    const actual = readFileSync("test/out/group_info.txt", "utf-8");
+    const success = actual === expected;
+    expect(success).to.be.true;
+  });
+
+  it('Outputs groups.csv', () => {
+    const expected = readFileSync("test/correct/groups.csv", "utf-8");
+    const actual = readFileSync("test/out/groups.csv", "utf-8");
+    const success = actual === expected;
+    expect(success).to.be.true;
+  });
+
+  it('Outputs sections.csv', () => {
+    const expected = readFileSync("test/correct/sections.csv", "utf-8");
+    const actual = readFileSync("test/out/sections.csv", "utf-8");
+    const success = actual === expected;
+    expect(success).to.be.true;
+  });
 
 });
