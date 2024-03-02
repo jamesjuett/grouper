@@ -1,7 +1,7 @@
 import randseed from 'random-seed';
 const { create } = randseed;
 import type { RandomSeed } from 'random-seed';
-import { shuffle } from 'shuffle-seed';
+import ShuffleSeed from 'shuffle-seed';
 import { assert } from './util';
 
 export class SeededRandomizer {
@@ -63,7 +63,7 @@ export class SeededRandomizer {
   }
 
   public shuffle<T>(original: readonly T[]) {
-    return shuffle(original, ""+this.float());
+    return ShuffleSeed.shuffle(original, ""+this.float());
   }
 
 }

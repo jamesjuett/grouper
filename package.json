@@ -14,7 +14,8 @@
     "papaparse": "^5.4.1",
     "random-seed": "^0.3.0",
     "shuffle-seed": "^1.1.6",
-    "ts-node": "^9.1.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.1",
     "typescript": "^5.3.3",
     "underscore": "^1.11.0"
   },
@@ -29,7 +30,7 @@
     "mocha": "^8.3.2"
   },
   "scripts": {
-    "test": "TS_NODE_FILES=true mocha --recursive -r ts-node/register 'test/**/*.spec.ts'"
+    "test": "mocha --loader=tsx --recursive 'test/**/*.spec.ts'"
   },
   "author": "",
   "license": "ISC"

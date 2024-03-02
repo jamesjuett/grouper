@@ -1,7 +1,5 @@
-import { readFileSync, writeFileSync } from "fs";
-import { Group, Grouper, allHaveInfo, hasInfo, someHaveInfo, withInfo } from "../grouper";
-import { expect } from "chai";
-import { assert } from "../util";
+import { writeFileSync } from "fs";
+import { Group, Grouper, Student, allHaveInfo, hasInfo, someHaveInfo, withInfo } from "./grouper";
 
 const SPECS = {
   survey: {
@@ -123,47 +121,64 @@ const grouper = new Grouper({
     n_opt_1: 100,
     n_opt_2: 10,
     n_restarts: 100,
-  },
-  describe_student: (s) => {
-    if (!hasInfo(s, "survey")) {
-      return s.id;
-    }
-    else {
-      return `${s.id} ${s.survey.preferred_name}: bg(${s.survey.previous_experience}) conf(${s.survey.confidence})${s.survey.pref_retake ? "(retake)" : ""}${s.survey.pref_plus_12 ? "(+12)" : ""}${s.survey.pref_fast_pace ? "(fast pace)" : ""}${s.survey.pref_less_comfortable ? "(less comfortable)" : ""}`
-    }
+    group_size: 4,
   },
   seed: "seed",
 });
 grouper.createGroups();
 
-describe('Sample Groups', function() {
-  // this.timeout(10000);
 
-  it('Consistent Assignments', () => {
-    const expected = JSON.parse(readFileSync("test/correct/assignments.json", "utf-8"));
-    writeFileSync("test/out/assignments.json", JSON.stringify(grouper.sections, null, 2));
-    expect(grouper.sections).to.deep.equal(expected);
-  });
+function describe_student(s: Student<typeof SPECS>) {
+  if (!hasInfo(s, "survey")) {
+    return s.id;
+  }
+  else {
+    return `${s.id} ${s.survey.preferred_name}: bg(${s.survey.previous_experience}) conf(${s.survey.confidence})${s.survey.pref_retake ? "(retake)" : ""}${s.survey.pref_plus_12 ? "(+12)" : ""}${s.survey.pref_fast_pace ? "(fast pace)" : ""}${s.survey.pref_less_comfortable ? "(less comfortable)" : ""}`
+  }
+}
 
-  // it('Outputs group_info.txt', () => {
-  //   const expected = readFileSync("test/correct/group_info.txt", "utf-8");
-  //   const actual = readFileSync("test/out/group_info.txt", "utf-8");
-  //   const success = actual === expected;
-  //   expect(success).to.be.true;
-  // });
 
-  // it('Outputs groups.csv', () => {
-  //   const expected = readFileSync("test/correct/groups.csv", "utf-8");
-  //   const actual = readFileSync("test/out/groups.csv", "utf-8");
-  //   const success = actual === expected;
-  //   expect(success).to.be.true;
-  // });
+let groups = grouper.sections.flat();
+    
+// sort in ascending order (remember lower objective is better)
+// groups.sort((a, b) => this.objective(a) - this.objective(b));
 
-  // it('Outputs sections.csv', () => {
-  //   const expected = readFileSync("test/correct/sections.csv", "utf-8");
-  //   const actual = readFileSync("test/out/sections.csv", "utf-8");
-  //   const success = actual === expected;
-  //   expect(success).to.be.true;
-  // });
-
+let output = "";
+groups.forEach((g, i) => {
+  output += `Group ${i}: s=${g.students[0].section} h=${grouper.objective(g)}\n`;
+  output += g.students.map(s => describe_student(s)).join("\n") + "\n";
+  output += "\n";
 });
+
+writeFileSync("out/group_info.txt", output);
+
+output = "";
+output += "group,section,score,emails,name1,name2,name3,name4,timeslot\n"
+groups.forEach((g, i) => {
+  output += "Group" + i + "," + g.students[0].section + "," + grouper.objective(g) + ",";
+  output += '"' + g.students.map(s => s.id + "@umich.edu").join(",") + '",';
+  output += (g.students[0]?.survey?.preferred_name ?? g.students[0]?.id ?? "") + ","
+  output += (g.students[1]?.survey?.preferred_name ?? g.students[1]?.id ?? "") + ","
+  output += (g.students[2]?.survey?.preferred_name ?? g.students[2]?.id ?? "") + ","
+  output += (g.students[3]?.survey?.preferred_name ?? g.students[3]?.id ?? "") + ","
+  output += g.students[0].section;
+  output += "\n";
+});
+
+writeFileSync("out/groups.csv", output);
+
+output = "";
+output += "section,group,id,name\n"
+grouper.sections.forEach(groups => {
+  groups.forEach((g, i) => {
+    g.students.forEach(s => {
+      output += `${s.section},${i+1},${s.id},${s.survey?.preferred_name || s.id }\n`;
+    });
+    for(let j = 0; j < grouper.algorithm.group_size - g.students.length; ++j) {
+      output += "\n";
+    }
+  });
+});
+
+writeFileSync("out/sections.csv", output);
+writeFileSync("out/assignments.json", JSON.stringify(grouper.sections, null, 2));
