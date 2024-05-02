@@ -15,7 +15,8 @@ function assert(condition: any, message: string = "") : asserts condition {
 
 type InfoKind = {
   kind: "id" | "section" | "number" | "string" | "boolean" | "bool" | readonly (number | string)[],
-  transform?: (val: string) => string
+  transform?: (val: string) => string,
+  allow_missing?: boolean,
 };
 
 type InfoValue<T extends InfoKind> = 
@@ -72,7 +73,12 @@ export function withoutInfo<Specs extends Record<string, InfoSpec>, PrevSources 
 
 
 function parseValue(source: string, property: string, kind: InfoKind, raw: string | undefined) {
-  assert(raw !== undefined, `Missing value for ${source}.${property}`);
+  if (kind.allow_missing && raw === undefined) {
+    return undefined;
+  }
+  else {
+    assert(raw !== undefined, `Missing value for ${source}.${property}`);
+  }
   const val = kind.transform ? kind.transform(raw) : raw;
 
   if (kind.kind === "id") {
@@ -339,7 +345,7 @@ export class Grouper<Specs extends Record<string, InfoSpec>> {
           // existing entry
           const student = this.students_map[parsed_id]!;
           student.section ??= parsed_section;
-          assert(student.section === parsed_section, `Mismatched section for ${parsed_id}: ${student.section} vs ${parsed_section}`);
+          assert(!section_key || student.section === parsed_section, `Mismatched section for ${parsed_id}: ${student.section} vs ${parsed_section}`);
           assert(student[source] === undefined, `Duplicate data for ${parsed_id} in ${source}`);
           (<any>student)[source] = parsed_info;
         }

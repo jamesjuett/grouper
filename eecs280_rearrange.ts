@@ -12,15 +12,23 @@ const SPECS = {
     pref_retake: { kind: "boolean" },
     pref_plus_12: { kind: "boolean" },
   },
-  roster: {
-    uniqname: { kind: "id" },
-  },
+  // roster: {
+  //   uniqname: { kind: "id" },
+  // },
   orig_assignments: {
     orig_section: { kind: "section" },
     orig_group: { kind: "number" },
     uniqname: { kind: "id" },
     preferred_name: { kind: "string" },
-  }
+  },
+  p2_partners: {
+    partner1: { kind: "id", transform: (s: string) => s.replace("@umich.edu", "")},
+    partner2: { kind: "string", transform: (s: string) => s.replace("@umich.edu", ""), allow_missing: true },
+  },
+  p3_partners: {
+    partner1: { kind: "id", transform: (s: string) => s.replace("@umich.edu", "")},
+    partner2: { kind: "string", transform: (s: string) => s.replace("@umich.edu", ""), allow_missing: true },
+  },
 } as const;
 
 function sample_objective(g: Group<typeof SPECS>) {
@@ -34,15 +42,20 @@ function sample_objective(g: Group<typeof SPECS>) {
   if (orig.length !== new Set(orig).size) {
     score += 100000;
   }
+  if (g.students.some(s => g.students.some(s2 => s.p2_partners?.partner2 === s2.id || s2.p3_partners?.partner2 === s2.id))) {
+    score += 10000;
+  }
   return score;
 }
 
 const grouper = new Grouper({
   specs: SPECS,
   data: {
-    roster: "data/280_mid_roster.csv",
+    // roster: "data/280_mid_roster.csv",
     survey: "data/survey.csv",
     orig_assignments: "data/orig_assignments.csv",
+    p2_partners: "data/p2_partners.csv",
+    p3_partners: "data/p3_partners.csv",
   },
   objective: sample_objective,
   algorithm: {
@@ -68,7 +81,13 @@ let groups = grouper.sections.flat();
 let output = "";
 groups.forEach((g, i) => {
   output += `Group ${i}: s=${g.students[0].section} h=${grouper.objective(g)}\n`;
-  output += g.students.map(s => describe_student(s)).join("\n") + "\n";
+  output += g.students.map(s => describe_student(s) + s.orig_assignments?.orig_section + "_" + s.orig_assignments?.orig_group).join("\n") + "\n";
+  if (g.students.some(s => g.students.some(s2 => s.p2_partners?.partner2 === s2.id || s2.p3_partners?.partner2 === s2.id))) {
+    output += "PARTNERS\n";
+  }
+  if (g.students.length < 3) {
+    output += "SMALL\n";
+  }
   output += "\n";
 });
 
@@ -76,15 +95,17 @@ writeFileSync("out/group_info.txt", output);
 
 output = "";
 output += "group,section,score,emails,name1,name2,name3,name4,timeslot\n"
-groups.forEach((g, i) => {
-  output += "Group" + i + "," + g.students[0].section + "," + grouper.objective(g) + ",";
-  output += '"' + g.students.map(s => s.id + "@umich.edu").join(",") + '",';
-  output += (g.students[0]?.survey?.preferred_name ?? g.students[0]?.id ?? "") + ","
-  output += (g.students[1]?.survey?.preferred_name ?? g.students[1]?.id ?? "") + ","
-  output += (g.students[2]?.survey?.preferred_name ?? g.students[2]?.id ?? "") + ","
-  output += (g.students[3]?.survey?.preferred_name ?? g.students[3]?.id ?? "") + ","
-  output += g.students[0].section;
-  output += "\n";
+grouper.sections.forEach(section => {
+  section.forEach((g,i) => {
+    output += i + "," + g.students[0].section + "," + grouper.objective(g) + ",";
+    output += '"' + g.students.map(s => s.id + "@umich.edu").join(",") + '",';
+    output += (g.students[0]?.survey?.preferred_name ?? g.students[0]?.id ?? "") + ","
+    output += (g.students[1]?.survey?.preferred_name ?? g.students[1]?.id ?? "") + ","
+    output += (g.students[2]?.survey?.preferred_name ?? g.students[2]?.id ?? "") + ","
+    output += (g.students[3]?.survey?.preferred_name ?? g.students[3]?.id ?? "") + ","
+    output += g.students[0].section;
+    output += "\n";
+  });
 });
 
 writeFileSync("out/groups.csv", output);
