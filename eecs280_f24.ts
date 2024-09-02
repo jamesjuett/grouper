@@ -9,7 +9,6 @@ const SPECS = {
     confidence: { kind: [1,2,3,4,5] },
     pref_less_comfortable: { kind: "boolean" },
     pref_fast_pace: { kind: "boolean" },
-    pref_retake: { kind: "boolean" },
     pref_plus_12: { kind: "boolean" },
   },
   roster: {
@@ -33,14 +32,7 @@ function sample_objective(g: Group<typeof SPECS>) {
   }
   
   // For the rest, only consider students who did the survey
-  let surveyStudents = withInfo(g.students, "survey");
-
-  // Prefer groups of all retakers
-  let numRetakers = surveyStudents.filter(s => s.survey.pref_retake).length;
-  if (numRetakers > 0 && numRetakers !== g_size) {
-    // mixed retakers vs non retakers
-    score += 1000000;
-  }
+  let surveyStudents : Student<typeof SPECS, "survey">[] = withInfo(g.students, "survey");
 
   if (surveyStudents.some(s => s.survey.previous_experience >= 4) &&
     surveyStudents.some(s => s.survey.previous_experience === 1)) {
@@ -110,22 +102,22 @@ function sample_objective(g: Group<typeof SPECS>) {
   return score;
 }
 
-const grouper = new Grouper({
+const grouper_a = new Grouper({
   specs: SPECS,
   data: {
-    survey: "data/in/survey.csv",
-    roster: "data/in/roster.csv",
+    survey: "data/survey.csv",
+    roster: "data/roster.csv",
   },
   objective: sample_objective,
   algorithm: {
-    n_opt_1: 100,
-    n_opt_2: 10,
+    n_opt_1: 10000,
+    n_opt_2: 1000,
     n_restarts: 100,
     group_size: 4,
   },
   seed: "seed",
 });
-grouper.createGroups();
+grouper_a.createGroups();
 
 
 function describe_student(s: Student<typeof SPECS>) {
@@ -133,52 +125,140 @@ function describe_student(s: Student<typeof SPECS>) {
     return s.id;
   }
   else {
-    return `${s.id} ${s.survey.preferred_name}: bg(${s.survey.previous_experience}) conf(${s.survey.confidence})${s.survey.pref_retake ? "(retake)" : ""}${s.survey.pref_plus_12 ? "(+12)" : ""}${s.survey.pref_fast_pace ? "(fast pace)" : ""}${s.survey.pref_less_comfortable ? "(less comfortable)" : ""}`
+    return `${s.id} ${s.survey.preferred_name}: bg(${s.survey.previous_experience}) conf(${s.survey.confidence})${s.survey.pref_plus_12 ? "(+12)" : ""}${s.survey.pref_fast_pace ? "(fast pace)" : ""}${s.survey.pref_less_comfortable ? "(less comfortable)" : ""}`
   }
 }
 
 
-let groups = grouper.sections.flat();
+// let groups = grouper_a.sections.flat();
     
-// sort in ascending order (remember lower objective is better)
-// groups.sort((a, b) => this.objective(a) - this.objective(b));
+// // sort in ascending order (remember lower objective is better)
+// // groups.sort((a, b) => this.objective(a) - this.objective(b));
+
+// let output = "";
+// groups.forEach((g, i) => {
+//   g.students.forEach(s => {
+//     output += `${s.id},${i+1}\n`;
+//   });
+// });
 
 let output = "";
-groups.forEach((g, i) => {
-  output += `Group ${i}: s=${g.students[0].section} h=${grouper.objective(g)}\n`;
-  output += g.students.map(s => describe_student(s)).join("\n") + "\n";
-  output += "\n";
-});
-
-writeFileSync("out/group_info.txt", output);
-
-output = "";
-output += "group,section,score,emails,name1,name2,name3,name4,timeslot\n"
-groups.forEach((g, i) => {
-  output += "Group" + i + "," + g.students[0].section + "," + grouper.objective(g) + ",";
-  output += '"' + g.students.map(s => s.id + "@umich.edu").join(",") + '",';
-  output += (g.students[0]?.survey?.preferred_name ?? g.students[0]?.id ?? "") + ","
-  output += (g.students[1]?.survey?.preferred_name ?? g.students[1]?.id ?? "") + ","
-  output += (g.students[2]?.survey?.preferred_name ?? g.students[2]?.id ?? "") + ","
-  output += (g.students[3]?.survey?.preferred_name ?? g.students[3]?.id ?? "") + ","
-  output += g.students[0].section;
-  output += "\n";
-});
-
-writeFileSync("out/groups.csv", output);
-
-output = "";
-output += "section,group,id,name\n"
-grouper.sections.forEach(groups => {
+output += "id,group_a\n"
+grouper_a.sections.forEach(groups => {
   groups.forEach((g, i) => {
     g.students.forEach(s => {
-      output += `${s.section},${i+1},${s.id},${s.survey?.preferred_name || s.id }\n`;
+      output += `${s.id},${i+1}\n`;
     });
-    for(let j = 0; j < grouper.algorithm.group_size - g.students.length; ++j) {
+  });
+});
+
+
+writeFileSync("out/groups_a.csv", output);
+
+
+const SPECS_B = {
+  
+  survey: {
+    email: { kind: "id" },
+    preferred_name: { kind: "string" },
+    previous_experience: { kind: [1,2,3,4,5] },
+    confidence: { kind: [1,2,3,4,5] },
+    pref_less_comfortable: { kind: "boolean" },
+    pref_fast_pace: { kind: "boolean" },
+    pref_plus_12: { kind: "boolean" },
+  },
+  roster: {
+    uniqname: { kind: "id", transform: (s: string) => s + "@umich.edu" },
+    section: { kind: "section" },
+  },
+  group_a: {
+    id: { kind: "id" },
+    group_a: { kind: "number" },
+  },
+} as const;
+
+
+
+function objective_b(g: Group<typeof SPECS_B>) {
+  // if multiple students have the same group return 100000
+  let score = sample_objective(g);
+  if (g.students.length !== new Set(g.students.map(s => s.group_a?.group_a)).size) {
+    return 10000000 + score;
+  }
+  else {
+    return score;
+  }
+}
+
+const grouper_b = new Grouper({
+  specs: SPECS_B,
+  data: {
+    survey: "data/survey.csv",
+    roster: "data/roster.csv",
+    group_a: "out/groups_a.csv",
+  },
+  objective: objective_b,
+  algorithm: {
+    n_opt_1: 10000,
+    n_opt_2: 1000,
+    n_restarts: 100,
+    group_size: 4,
+  },
+  seed: "seed",
+});
+grouper_b.createGroups();
+
+
+// output = "";
+// output += "group,section,score,emails,name1,name2,name3,name4,timeslot\n"
+// groups.forEach((g, i) => {
+//   output += "Group" + i + "," + g.students[0].section + "," + grouper_a.objective(g) + ",";
+//   output += '"' + g.students.map(s => s.id + "@umich.edu").join(",") + '",';
+//   output += (g.students[0]?.survey?.preferred_name ?? g.students[0]?.id ?? "") + ","
+//   output += (g.students[1]?.survey?.preferred_name ?? g.students[1]?.id ?? "") + ","
+//   output += (g.students[2]?.survey?.preferred_name ?? g.students[2]?.id ?? "") + ","
+//   output += (g.students[3]?.survey?.preferred_name ?? g.students[3]?.id ?? "") + ","
+//   output += g.students[0].section;
+//   output += "\n";
+// });
+
+// writeFileSync("out/groups.csv", output);
+
+
+
+
+
+output = "";
+output += "section,group_a,group_b,id,name\n"
+grouper_b.sections.forEach(groups => {
+  groups.forEach((g, i) => {
+    g.students.forEach(s => {
+      output += `${s.section},${s.group_a?.group_a},${i+1},${s.id},${s.survey?.preferred_name || s.id }\n`;
+    });
+    for(let j = 0; j < grouper_b.algorithm.group_size - g.students.length; ++j) {
       output += "\n";
     }
   });
 });
 
 writeFileSync("out/sections.csv", output);
-writeFileSync("out/assignments.json", JSON.stringify(grouper.sections, null, 2));
+writeFileSync("out/assignments_a.json", JSON.stringify(grouper_a.sections, null, 2));
+writeFileSync("out/assignments_b.json", JSON.stringify(grouper_b.sections, null, 2));
+
+output = "";
+grouper_a.sections.flat().forEach((g, i) => {
+  output += `Group ${i}: s=${g.students[0].section} h=${grouper_a.objective(g)}\n`;
+  output += g.students.map(s => describe_student(s)).join("\n") + "\n";
+  output += "\n";
+});
+
+writeFileSync("out/groups_a_info.txt", output);
+
+output = "";
+grouper_b.sections.flat().forEach((g, i) => {
+  output += `Group ${i}: s=${g.students[0].section} h=${grouper_b.objective(g)}\n`;
+  output += g.students.map(s => describe_student(s)).join("\n") + "\n";
+  output += "\n";
+});
+
+writeFileSync("out/groups_b_info.txt", output);
