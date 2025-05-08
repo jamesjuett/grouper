@@ -28,19 +28,23 @@ function sample_objective(g: Group<typeof SPECS>) {
   }
 
   if (!allHaveInfo(g, "survey")) {
-    score += 100000; // Mix of survey and non-survey, want to avoid
+    score += 10; // Mix of survey and non-survey, want to avoid
   }
   
   // For the rest, only consider students who did the survey
   let surveyStudents : Student<typeof SPECS, "survey">[] = withInfo(g.students, "survey");
 
   if (surveyStudents.some(s => s.survey.previous_experience >= 4) &&
-    surveyStudents.some(s => s.survey.previous_experience === 1)) {
-    // A 1 previous_experience paired with 4s and 5s (bad)
+    surveyStudents.some(s => s.survey.previous_experience === 1 && s.survey.confidence === 1)) {
+    // A 1 previous_experience/confidence paired with 4s and 5s (bad)
     score += 10000;
   }
   else if (surveyStudents.length >= 0 && surveyStudents.every(s => s.survey.previous_experience <= 2)) {
     // Everyone 2 or less previous_experience (bad)
+    score += 10000;
+  }
+  else if (surveyStudents.length >= 0 && surveyStudents.every(s => s.survey.confidence <= 3)) {
+    // Everyone 3 or less confidence (bad)
     score += 10000;
   }
   else if (surveyStudents.some(
@@ -56,10 +60,18 @@ function sample_objective(g: Group<typeof SPECS>) {
   }
 
   if (surveyStudents.some(s => s.survey.confidence === 1 || s.survey.confidence === 2)) {
-    // something
-    if (!surveyStudents.some(s => s.survey.confidence === 3)) {
+    // Avoid low confidence paired with two or more 5 confidence
+    if (surveyStudents.filter(s => s.survey.confidence === 5).length >= 2) {
       score += 10000;
     }
+    // Avoid low confidence paired with fast pace + high confidence
+    if (surveyStudents.some(s => s.survey.pref_fast_pace && s.survey.confidence > 3)) {
+      score += 10000;
+    }
+  }
+
+  if (surveyStudents.length !== groupStudents.length) {
+    // Repeat heuristic above, assuming sutdents who don't fill out the survey may be low confidence
     if (surveyStudents.filter(s => s.survey.confidence === 5).length >= 2) {
       score += 10000;
     }
@@ -67,12 +79,17 @@ function sample_objective(g: Group<typeof SPECS>) {
       score += 10000;
     }
   }
+
+  // A group with less than half survey students (unless none of them are)
+  if (surveyStudents.length < groupStudents.length / 2 && surveyStudents.length !== 0) {
+    score += 100000;
+  }
   
-  // Penalize for groups of 3. This is a smaller penalty than e.g. retakers paired
-  // with non-retakers, which means we'll try to form groups of 4 if we can but also
+  // Penalize for groups of 3. This is a smaller penalty others,
+  // which means we'll try to form groups of 4 if we can but also
   // allow groups of 3 if it helps us resolve bigger issues.
   if (g_size < 4) {
-    score += 10000;
+    score += 1000;
   }
 
   // Any student who prefers less comfortable (but not a fast pace) and is paired with
@@ -110,8 +127,8 @@ const grouper_a = new Grouper({
   },
   objective: sample_objective,
   algorithm: {
-    n_opt_1: 10000,
-    n_opt_2: 1000,
+    n_opt_1: 1000,
+    n_opt_2: 100,
     n_restarts: 100,
     group_size: 4,
   },
@@ -199,8 +216,8 @@ const grouper_b = new Grouper({
   },
   objective: objective_b,
   algorithm: {
-    n_opt_1: 10000,
-    n_opt_2: 1000,
+    n_opt_1: 1000,
+    n_opt_2: 100,
     n_restarts: 100,
     group_size: 4,
   },

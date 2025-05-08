@@ -363,6 +363,8 @@ export class Grouper<Specs extends Record<string, InfoSpec>> {
     asMutable(this).students = <Student<Specs>[]>Object.values(this.students_map);
 
     asMutable(this.section_names).sort((a,b) => a.localeCompare(b));
+
+    // Note that the hardcoded "undefined" here is to catch students who weren't in the roster
     asMutable(this).sections = [...this.section_names, undefined].map((sectionNum) => {
       console.log(`Forming groups for section ${sectionNum}...`)
       let students = this.students.filter(s => s.section === sectionNum);
